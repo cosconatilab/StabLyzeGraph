@@ -1,0 +1,14 @@
+torch
+torch_geometric
+BioPython
+scikit-learn
+pandas
+numpy
+imbalanced-learn
+joblib
+matplotlib
+seaborn
+tqdm
+
+PyQt6
+pyqtgraph
