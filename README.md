@@ -11,14 +11,14 @@
   [![License](https://img.shields.io/badge/License-GNU-yellow.svg)](LICENSE)
 </div>
 
-## 🧬 About
+##  About
 
 StablyzeGraph is a comprehensive desktop application for protein engineering that combines machine learning with an intuitive graphical interface. It provides two main modes:
 
 - **Benchmarking Mode**: Evaluate protein engineering models with comprehensive metrics and visualizations
 - **Screening Mode**: Generate and rank protein mutants using advanced algorithms
 
-## ✨ Features
+##  Features
 
 - **Interactive GUI**: Modern PyQt6-based interface with real-time progress tracking
 - **PyTorch Integration**: Leverages PyTorch and PyTorch Geometric for deep learning
@@ -26,7 +26,7 @@ StablyzeGraph is a comprehensive desktop application for protein engineering tha
 - **Flexible Input**: Supports various file formats (CSV, FASTA, PDB)
 - **Cross-Platform**: Works on Linux systems with full desktop integration
 
-## 🚀 Quick Install
+##  Quick Install
 
 ### Prerequisites
 
@@ -57,22 +57,22 @@ cd stablyzegraph
 ./install_stablyzegraph_gui.sh
 ```
 
-## 📋 Installation Details
+##  Installation Details
 
 The installer will automatically:
 
-1. **🐍 Setup Python Environment**
+1. **Setup Python Environment**
    - Detect or install Miniconda/Anaconda
    - Create isolated Conda environment (`stablyzegraph_env`)
    - Install PyTorch with CUDA support
 
-2. **📦 Install Dependencies**
+2. **Install Dependencies**
    - PyTorch & PyTorch Geometric
    - PyQt6 for GUI
    - BioPython for sequence analysis
    - Scientific Python stack (NumPy, Pandas, Matplotlib, etc.)
 
-3. **🖥️ System Integration**
+3. **System Integration**
    - Create `stablyzegraph` terminal command
    - Add desktop entry and application menu integration
    - Generate desktop shortcut
@@ -136,13 +136,12 @@ Or use the desktop shortcut/application menu entry.
    - View ranked mutants table
    - Export results
 
-## 🔧 System Requirements
+## System Requirements
 
 ### Minimum Requirements
 - **OS**: Linux (Ubuntu 18.04+, CentOS 7+, Fedora 30+)
 - **RAM**: 4GB (16GB recommended)
 - **Storage**: 5GB free space
-- **GPU**: CUDA-compatible GPU (optional, for acceleration)
 
 ### Required System Packages
 ```bash
@@ -156,7 +155,7 @@ sudo yum groupinstall 'Development Tools' && sudo yum install wget curl
 sudo dnf groupinstall 'Development Tools' && sudo dnf install wget curl
 ```
 
-## 🗑️ Uninstallation
+## Uninstallation
 
 To remove StablyzeGraph completely:
 
@@ -173,7 +172,7 @@ To also remove the Conda environment:
 conda env remove -n stablyzegraph_env
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -211,7 +210,6 @@ chmod +x install_stablyzegraph_gui.sh
 stablyzegraph-installer/
 ├── install_stablyzegraph_gui.sh    # Main installer script
 ├── README.md                       # This file
-├── NSE                         # nse file
 └── src/                           # Source files
     ├── main.py                    # Main application
     ├── Benchmarking.py           # Benchmarking module
@@ -220,12 +218,12 @@ stablyzegraph-installer/
     └── logo.png                  # Application logo
 ```
 
-## 📄 License
+## License
 
 This project is licensed under the GNU Affero General Public License v3.0 License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 <div align="center">
-  <strong>Made with ❤️ for the protein engineering community</strong>
+  <strong></strong>
 </div>
