@@ -8,7 +8,7 @@
   [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
   [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org)
   [![PyQt6](https://img.shields.io/badge/PyQt6-6.0+-green.svg)](https://www.riverbankcomputing.com/software/pyqt/)
-  [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+  [![License](https://img.shields.io/badge/License-GNU-yellow.svg)](LICENSE)
 </div>
 
 ## 🧬 About
@@ -211,7 +211,7 @@ chmod +x install_stablyzegraph_gui.sh
 stablyzegraph-installer/
 ├── install_stablyzegraph_gui.sh    # Main installer script
 ├── README.md                       # This file
-├── LICENSE                         # License file
+├── NSE                         # nse file
 └── src/                           # Source files
     ├── main.py                    # Main application
     ├── Benchmarking.py           # Benchmarking module
@@ -232,7 +232,7 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU Affero General Public License v3.0 License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
