@@ -1,9 +1,9 @@
-# StablyzeGraph
+# StabLyzeGraph
 
 <div align="center">
   <img src="src/logo.png" alt="StablyzeGraph Logo" width="300"/>
   
-  **A PyQt6-based GUI for protein engineering with Benchmarking and Screening modes**
+  **StabLyzeGraph: Charting Stability-Enhancing Mutations using Graph Neural Networks**
   
   [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
   [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org)
