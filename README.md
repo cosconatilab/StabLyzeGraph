@@ -23,7 +23,6 @@
 - **Interactive GUI**: Modern PyQt6-based interface with real-time progress tracking
 - **PyTorch Integration**: Leverages PyTorch and PyTorch Geometric for deep learning
 - **Comprehensive Analysis**: Detailed metrics, plots, and result visualization
-- **Flexible Input**: Supports various file formats (CSV, FASTA, PDB)
 - **Cross-Platform**: Works on Linux systems with full desktop integration
 
 ##  Quick Install
