@@ -140,7 +140,7 @@ Or use the desktop shortcut/application menu entry.
 
 ### Minimum Requirements
 - **OS**: Linux (Ubuntu 18.04+, CentOS 7+, Fedora 30+)
-- **RAM**: 8GB (16GB recommended)
+- **RAM**: 4GB (16GB recommended)
 - **Storage**: 5GB free space
 - **GPU**: CUDA-compatible GPU (optional, for acceleration)
 
@@ -220,32 +220,9 @@ stablyzegraph-installer/
     └── logo.png                  # Application logo
 ```
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
 ## 📄 License
 
 This project is licensed under the GNU Affero General Public License v3.0 License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- PyTorch team for the deep learning framework
-- PyTorch Geometric developers for graph neural networks
-- BioPython community for sequence analysis tools
-- Qt/PyQt6 for the GUI framework
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/your-repo/stablyzegraph/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-repo/stablyzegraph/discussions)
-- **Email**: support@stablyzegraph.org
 
 ---
 
