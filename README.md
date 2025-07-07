@@ -1,4 +1,4 @@
-# StablyzeGraph Desktop Application
+# StablyzeGraph
 
 <div align="center">
   <img src="src/logo.png" alt="StablyzeGraph Logo" width="300"/>
@@ -85,7 +85,7 @@ During installation, you can choose:
 - **System-wide installation** (`/opt/stablyzegraph`) - requires sudo
 - **User installation** (`~/.local/share/stablyzegraph`) - recommended
 
-## 🎮 Usage
+##  Usage
 
 ### Launch Methods
 
@@ -188,12 +188,6 @@ conda env remove -n stablyzegraph_env
 # Check if PyQt6 is properly installed
 conda activate stablyzegraph_env
 python -c "import PyQt6; print('PyQt6 OK')"
-```
-
-**CUDA not available:**
-```bash
-# Check CUDA installation
-python -c "import torch; print(torch.cuda.is_available())"
 ```
 
 **Permission denied errors:**
