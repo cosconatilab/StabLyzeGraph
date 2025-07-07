@@ -15,8 +15,8 @@
 
 **StabLyzeGraph** is a comprehensive computational framework for accelerated protein stability engineering, tackling the challenges of vast mutational space and complex protein interactions using graph neural networks (GNNs). StabLyzeGraph integrates diverse protein features (physicochemical properties, evolutionary conservation, and 3D structure coordinates) to predict the impact of mutations, identify beneficial combinations, and streamline the discovery of highly stable proteins. It provides two main modes:
 
-- **Benchmarking Mode**: Evaluate protein engineering models with comprehensive metrics and visualizations
-- **Screening Mode**: Generate and rank protein mutants using advanced algorithms
+- **Benchmarking Mode**: In benchmarking mode, most robust and more relevent GNN model is fined tuned by hyperparameter optimization.
+- **Screening Mode**: In screening mode, first a library of mutants generated then screened using optimized/trained model. 
 
 ##  Features
 
