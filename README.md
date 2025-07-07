@@ -15,8 +15,8 @@
 
 StablyzeGraph is a comprehensive desktop application for protein engineering that combines machine learning with an intuitive graphical interface. It provides two main modes:
 
-- **🔬 Benchmarking Mode**: Evaluate protein engineering models with comprehensive metrics and visualizations
-- **🎯 Screening Mode**: Generate and rank protein mutants using advanced algorithms
+- ** Benchmarking Mode**: Evaluate protein engineering models with comprehensive metrics and visualizations
+- ** Screening Mode**: Generate and rank protein mutants using advanced algorithms
 
 ## ✨ Features
 
