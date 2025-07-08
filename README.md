@@ -39,6 +39,8 @@
 # Download and extract the package
 wget https://github.com/your-repo/stablyzegraph/releases/latest/download/stablyzegraph-installer.tar.gz
 tar -xzf stablyzegraph-installer.tar.gz
+or
+unzip Stablyzegraph_main.zip
 cd stablyzegraph-installer
 
 # Run the installer
