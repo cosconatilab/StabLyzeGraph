@@ -11,8 +11,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Define input and output paths
-alignment_file = "/mnt/c/Users/javed/Downloads/quality/mutation_analysis/analysis_results_7/b.aln"
-output_dir = "/mnt/c/Users/javed/Downloads/quality/mutation_analysis/analysis_results_7/analysis_results"
+alignment_file = "~/path/alignment_file.aln"
+output_dir = "~/path/analysis_results"
 os.makedirs(output_dir, exist_ok=True)
 
 print(f"Starting analysis of {alignment_file}")
