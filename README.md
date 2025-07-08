@@ -42,7 +42,7 @@ tar -xzf stablyzegraph-installer.tar.gz
 cd stablyzegraph-installer
 
 # Run the installer
-./install_stablyzegraph_gui.sh
+python install_stablyzegraph_gui.py
 ```
 
 ### Alternative: Clone from Repository
@@ -53,7 +53,7 @@ git clone https://github.com/your-repo/stablyzegraph.git
 cd stablyzegraph
 
 # Run the installer
-./install_stablyzegraph_gui.sh
+python install_stablyzegraph_gui.py
 ```
 
 ##  Installation Details
@@ -95,7 +95,7 @@ After installation, you can launch StablyzeGraph using any of these methods:
 stablyzegraph
 
 # Direct launcher script
-~/.local/share/stablyzegraph/stablyzegraph_launcher.sh
+~/.local/share/stablyzegraph/stablyzegraph.sh
 ```
 
 Or use the desktop shortcut/application menu entry.
