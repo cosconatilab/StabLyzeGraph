@@ -194,13 +194,6 @@ python -c "import PyQt6; print('PyQt6 OK')"
 export QT_QPA_PLATFORM=xcb
 ```
 
-**Permission denied errors:**
-```bash
-# Ensure installer script is executable
-python install_stablyzegraph_gui.py
-```
-
-
 ### Getting Help
 
 1. Check the installation logs for detailed error messages
