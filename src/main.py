@@ -134,8 +134,8 @@ class WorkerThread(QThread):
         self.result_file = os.path.join(self.output_dir, "results.json")
         
     def run(self):
-        stdout_lines = []
-        stderr_lines = []
+        stdout_str = ""
+        stderr_str = ""
         try:
             self.log_message.emit(f"Worker thread started for command: {' '.join(self.command)}")
             self.log_message.emit(f"Working directory: {self.working_dir}")
@@ -151,15 +151,8 @@ class WorkerThread(QThread):
                 self.log_message.emit(f"Warning: Could not remove old status files from {self.output_dir}: {e}")
                 
             # Start the process
-            venv_python = os.path.join(os.path.dirname(os.path.abspath(__file__)), "venv", "bin", "python3")
-            if not os.path.exists(venv_python):
-                 venv_python = os.path.join(os.path.dirname(os.path.abspath(__file__)), "venv", "Scripts", "python.exe") # Windows
-            if not os.path.exists(venv_python):
-                 self.log_message.emit("ERROR: Virtual environment Python not found. Please run install.py.")
-                 self.process_finished.emit(False, "", "Virtual environment Python not found. Please run install.py.", self.output_dir)
-                 return
-                 
-            full_command = [venv_python] + self.command
+            # Use conda run to activate the environment and execute the script
+            full_command = ["conda", "run", "-n", "stablyzegraph", "python"] + self.command
             self.log_message.emit(f"Executing: {' '.join(full_command)}")
             
             # Define log file paths for subprocess stdout/stderr
@@ -192,7 +185,7 @@ class WorkerThread(QThread):
 
             except FileNotFoundError as fnf_error:
                 error_details = traceback.format_exc()
-                self.log_message.emit(f"CRITICAL ERROR: FileNotFoundError during Popen setup or execution (e.g., script '{full_command[0]}' or python interpreter '{venv_python}' not found, or CWD '{self.working_dir}' invalid): {fnf_error}\nTraceback:\n{error_details}")
+                self.log_message.emit(f"CRITICAL ERROR: FileNotFoundError during Popen setup or execution (e.g., script '{full_command[0]}' not found, or CWD '{self.working_dir}' invalid): {fnf_error}\nTraceback:\n{error_details}")
                 self.process_finished.emit(False, "", f"Failed to start script (FileNotFound): {fnf_error}. Check script/Python path and CWD.", self.output_dir)
                 return # Exit the run method
             except PermissionError as perm_error:
@@ -250,6 +243,8 @@ class WorkerThread(QThread):
                  
             self.log_message.emit("Process finished, collecting results...")
             stdout, stderr = self.process.communicate()
+            stdout_str = stdout.decode('utf-8') if stdout else ""
+            stderr_str = stderr.decode('utf-8') if stderr else ""
             return_code = self.process.returncode
             self.log_message.emit(f"Process exited with code: {return_code}")
             if stdout: self.log_message.emit(f"Process STDOUT:\n{stdout}")
@@ -1015,4 +1010,4 @@ if __name__ == "__main__":
     window.show()
     sys.exit(app.exec())
 
-# --- End of File ---               
+# --- End of File ---          
