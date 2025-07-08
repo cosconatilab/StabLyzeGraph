@@ -120,7 +120,7 @@ Or use the desktop shortcut/application menu entry.
 3. **Run Analysis:**
    - Click "Run Benchmarking"
    - Monitor progress in real-time
-   - View results: metrics, plots, confusion matrix
+   - View results: metrics, plots
 
 ### Screening Mode
 
