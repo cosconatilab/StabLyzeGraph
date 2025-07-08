@@ -168,7 +168,7 @@ To remove StablyzeGraph completely:
 
 To also remove the Conda environment:
 ```bash
-conda env remove -n stablyzegraph_env
+conda env remove -n stablyzegraph
 ```
 
 ## Troubleshooting
@@ -188,11 +188,18 @@ conda activate stablyzegraph_env
 python -c "import PyQt6; print('PyQt6 OK')"
 ```
 
+**GUI is not opening properly:**
+```bash
+# Try to export QT platform manually and then try
+export QT_QPA_PLATFORM=xcb
+```
+
 **Permission denied errors:**
 ```bash
 # Ensure installer script is executable
-chmod +x install_stablyzegraph_gui.sh
+python install_stablyzegraph_gui.py
 ```
+
 
 ### Getting Help
 
@@ -200,7 +207,7 @@ chmod +x install_stablyzegraph_gui.sh
 2. Ensure all system requirements are met
 3. Try running the installer with verbose output:
    ```bash
-   bash -x install_stablyzegraph_gui.sh
+   python install_stablyzegraph_gui.py
    ```
 
 ## 📁 Project Structure
