@@ -209,14 +209,22 @@ export QT_QPA_PLATFORM=xcb
 
 ```
 stablyzegraph-installer/
-├── install_stablyzegraph_gui.sh    # Main installer script
+├── install_stablyzegraph_gui.py    # Main installer script
 ├── README.md                       # This file
-└── src/                           # Source files
-    ├── main.py                    # Main application
-    ├── Benchmarking.py           # Benchmarking module
-    ├── Screening.py              # Screening module
-    ├── requirements.txt          # Python dependencies
-    └── logo.png                  # Application logo
+└── Tutorial/                       # Example input files and results for default comparison
+    └── Benchmarking/               # Input and Result data files for benhcmarking analysis
+    └── Screening/                  # Input and Result data files for benhcmarking analysis
+└── src/                            # Source files
+    ├── main.py                     # Main application
+    ├── Benchmarking.py             # Benchmarking module
+    ├── Screening.py                # Screening module
+    ├── requirements.txt            # Python dependencies
+    ├── logo.png                    # Application logo
+    ├── icon.png                    # Application desktop icon
+└── python_scripts/
+    ├── Mutation_list_to_sequence_conversion.py # Module for the conversion of a mutation list into protein mutant sequences
+    ├── Data_augmentation.py             # Module for augmenting negative data class (if required)
+    ├── Similarity_check_BLOSUM.py       # Module to run BLOSUM similarity check for pairwise comparison
 ```
 
 ## License
