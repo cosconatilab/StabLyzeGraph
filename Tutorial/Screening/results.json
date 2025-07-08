@@ -1,0 +1,9 @@
+{
+    "status": "success",
+    "message": "Screening completed successfully.",
+    "ranked_mutants_file": "/home/muhammadwaqas/stablyzegraph_installer_updated/src/Tutorial/Screening/ranked_mutants.csv",
+    "wild_type_prediction": "0.9096",
+    "probability_histogram_file": "/home/muhammadwaqas/stablyzegraph_installer_updated/src/Tutorial/Screening/mutant_probabilities_histogram.png",
+    "top_mutations_plot_file": "/home/muhammadwaqas/stablyzegraph_installer_updated/src/Tutorial/Screening/mutant_probabilities_top20.png",
+    "generated_mutants_fasta_file": "/home/muhammadwaqas/stablyzegraph_installer_updated/src/Tutorial/Screening/generated_mutant_sequences.fasta"
+}
