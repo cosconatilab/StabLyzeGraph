@@ -1,3 +1,5 @@
+import multiprocessing as mp
+mp.set_start_method("spawn", force=True)
 import gc
 import os
 import numpy as np
@@ -48,6 +50,7 @@ import time # Added for GUI integration
 import json # Added for GUI integration
 import sys # Added for GUI integration
 
+
 matplotlib.use("Agg")  # Use non-GUI backend for rendering to files.
 
 # Set up logging for better tracking
@@ -58,7 +61,7 @@ warnings.filterwarnings("ignore")  # Ignore warnings for cleaner output
 
 # Default random seed (can be overridden by argument)
 DEFAULT_SEED = 42
-optimal_threshold = 0.85 # Default optimal threshold
+optimal_threshold = 0.75 # Default optimal threshold
 
 # Set seed for CPU operations initially
 torch.manual_seed(DEFAULT_SEED)
@@ -676,6 +679,7 @@ def run_screening_pipeline(
     return ranked_mutants_path, wild_type_pred, prob_hist_path, top_mut_path, mutant_fasta_path
 
 if __name__ == "__main__":
+    mp.set_start_method("spawn", force=True)
     parser = argparse.ArgumentParser(description="StablyzeGraph Screening Pipeline")
     parser.add_argument("--active", required=True, help="Path to active sequences CSV file")
     parser.add_argument("--inactive", required=True, help="Path to inactive sequences CSV file")
@@ -725,4 +729,3 @@ if __name__ == "__main__":
         except Exception as write_e:
             logging.error(f"Critical: Could not write error status to results file {result_file}: {write_e}")
         sys.exit(1)
-
