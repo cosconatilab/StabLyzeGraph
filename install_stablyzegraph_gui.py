@@ -18,6 +18,7 @@ DESKTOP_ENTRY_PATH = Path.home() / ".local/share/applications/stablyzegraph.desk
 UNINSTALL_SCRIPT_PATH = INSTALL_DIR / "uninstall_stablyzegraph.sh"
 
 
+
 def check_command(cmd):
     try:
         subprocess.run([cmd, "--version"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
