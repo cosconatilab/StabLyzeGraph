@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-StablyzeGraph Desktop Application (Rewritten v5)
+StabLyzeGraph Desktop Application (Rewritten v5)
 A PyQt6-based GUI for protein engineering with Benchmarking and Screening modes.
 Focus on simplified process management, enhanced logging, and robustness.
 Adds model upload for Screening mode.
@@ -33,6 +33,8 @@ from PyQt6.QtWidgets import (
 from PyQt6.QtCore import Qt, QThread, pyqtSignal, QTimer, QSize
 from PyQt6.QtGui import QPixmap, QFont, QColor, QPalette, QDesktopServices # For opening URLs/Files
 from PyQt6.QtCore import QUrl # For opening URLs/Files
+from PyQt6.QtCore import QLocale
+QLocale.setDefault(QLocale(QLocale.Language.C))
 
 import matplotlib
 matplotlib.use("Qt5Agg")
@@ -67,14 +69,14 @@ def get_asset_path(asset_name):
 
 def create_default_output_dir(mode):
     """Creates and returns the default output directory path."""
-    dir_path = os.path.join(os.path.expanduser("~"), "stablyzegraph_results", mode, datetime.now().strftime("%Y%m%d_%H%M%S"))
+    dir_path = os.path.join(os.path.expanduser("~"), "StabLyzeGraph_results", mode, datetime.now().strftime("%Y%m%d_%H%M%S"))
     try:
         os.makedirs(dir_path, exist_ok=True)
         return dir_path
     except OSError as e:
         print(f"Error creating default output directory: {e}")
         # Fallback to current directory if home directory fails
-        fallback_path = os.path.join(os.getcwd(), "stablyzegraph_results", mode, datetime.now().strftime("%Y%m%d_%H%M%S"))
+        fallback_path = os.path.join(os.getcwd(), "StabLyzeGraph_results", mode, datetime.now().strftime("%Y%m%d_%H%M%S"))
         try:
             os.makedirs(fallback_path, exist_ok=True)
             return fallback_path
@@ -908,7 +910,7 @@ class ScreeningTab(BaseTab):
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("StablyzeGraph")
+        self.setWindowTitle("StabLyzeGraph")
         self.setGeometry(100, 100, 1200, 800)
         self.setStyleSheet(f"background-color: {COLORS['background']}; color: {COLORS['text']};")
         
@@ -925,7 +927,7 @@ class MainWindow(QMainWindow):
             logo_label.setPixmap(pixmap.scaled(64, 64, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation))
         else:
             logo_label.setText("[Logo]")
-        title_label = QLabel("StablyzeGraph")
+        title_label = QLabel("StabLyzeGraph")
         title_label.setFont(QFont("Arial", 24, QFont.Weight.Bold))
         title_label.setStyleSheet(f"color: {COLORS['primary']}; margin-left: 10px;")
         header_layout.addWidget(logo_label)
