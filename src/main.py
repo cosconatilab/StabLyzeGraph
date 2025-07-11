@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-StablyzeGraph Desktop Application (Rewritten v5)
+StabLyzeGraph Desktop Application (Rewritten v5)
 A PyQt6-based GUI for protein engineering with Benchmarking and Screening modes.
 Focus on simplified process management, enhanced logging, and robustness.
 Adds model upload for Screening mode.
