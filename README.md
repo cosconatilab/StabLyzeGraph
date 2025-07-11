@@ -37,11 +37,9 @@
 
 ```bash
 # Download and extract the package
-wget https://github.com/your-repo/stablyzegraph/releases/latest/download/stablyzegraph-installer.tar.gz
-tar -xzf stablyzegraph-installer.tar.gz
-or
-unzip Stablyzegraph_main.zip
-cd stablyzegraph-installer
+wget https://github.com/cosconatilab/StabLyzeGraph/archive/refs/heads/main.zip
+unzip main.zip
+cd main/StabLyzeGraph-main/
 
 # Run the installer
 python install_stablyzegraph_gui.py
@@ -51,8 +49,8 @@ python install_stablyzegraph_gui.py
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-repo/stablyzegraph.git
-cd stablyzegraph
+git clone https://github.com/cosconatilab/StabLyzeGraph.git
+cd StabLyzeGraph
 
 # Run the installer
 python install_stablyzegraph_gui.py
@@ -70,6 +68,7 @@ The installer will automatically:
 2. **Install Dependencies**
    - PyTorch & PyTorch Geometric
    - PyQt6 for GUI
+   - Clustalo
    - BioPython for sequence analysis
    - Scientific Python stack (NumPy, Pandas, Matplotlib, etc.)
 
