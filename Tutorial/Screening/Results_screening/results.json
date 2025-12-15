@@ -1,0 +1,9 @@
+{
+    "status": "success",
+    "message": "Screening completed successfully.",
+    "ranked_mutants_file": "Results_screening/ranked_mutants.csv",
+    "wild_type_prediction": "0.6269",
+    "probability_histogram_file": "Results_screening/mutant_probabilities_histogram.png",
+    "top_mutations_plot_file": "Results_screening/mutant_probabilities_top20.png",
+    "generated_mutants_fasta_file": "Results_screening/generated_mutant_sequences.fasta"
+}
