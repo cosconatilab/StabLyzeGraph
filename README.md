@@ -29,7 +29,7 @@
 
 ### Prerequisites
 
-- Linux operating system (Ubuntu, CentOS, Fedora, etc.)
+- Linux operating system (Ubuntu, CentOS, Fedora, etc.) or Windows 64 bit
 - Internet connection for downloading dependencies
 - At least 5GB of free disk space
 
