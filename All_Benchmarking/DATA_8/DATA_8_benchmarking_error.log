@@ -1,0 +1,51 @@
+2025-11-08 13:31:38,293 - INFO - Starting benchmarking pipeline.
+2025-11-08 13:31:38,293 - INFO - Preparing data.
+2025-11-08 13:31:48,461 - INFO - Starting Fold 1/5
+2025-11-08 13:32:20,485 - INFO - Fold 1, Epoch 50/1000, Train Loss: 0.7342, Test Loss: 0.7119, Test ROC AUC: 0.8476
+2025-11-08 13:32:51,761 - INFO - Fold 1, Epoch 100/1000, Train Loss: 0.6498, Test Loss: 0.6700, Test ROC AUC: 0.9079
+2025-11-08 13:33:21,570 - INFO - Early stopping triggered for fold 1 at epoch 148.
+2025-11-08 13:33:22,377 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:33:22,385 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:33:22,421 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:33:22,427 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:33:24,051 - INFO - Starting Fold 2/5
+2025-11-08 13:33:54,851 - INFO - Fold 2, Epoch 50/1000, Train Loss: 0.7197, Test Loss: 0.8300, Test ROC AUC: 0.7959
+2025-11-08 13:34:25,591 - INFO - Fold 2, Epoch 100/1000, Train Loss: 0.5626, Test Loss: 0.6756, Test ROC AUC: 1.0000
+2025-11-08 13:34:52,569 - INFO - Early stopping triggered for fold 2 at epoch 144.
+2025-11-08 13:34:53,323 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:34:53,331 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:34:53,369 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:34:53,375 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:34:54,990 - INFO - Starting Fold 3/5
+2025-11-08 13:35:25,676 - INFO - Fold 3, Epoch 50/1000, Train Loss: 0.7647, Test Loss: 0.7201, Test ROC AUC: 0.8129
+2025-11-08 13:35:55,033 - INFO - Early stopping triggered for fold 3 at epoch 98.
+2025-11-08 13:35:55,760 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:35:55,767 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:35:55,809 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:35:55,815 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:35:57,351 - INFO - Starting Fold 4/5
+2025-11-08 13:36:28,149 - INFO - Fold 4, Epoch 50/1000, Train Loss: 0.7613, Test Loss: 0.7251, Test ROC AUC: 0.8163
+2025-11-08 13:37:00,541 - INFO - Fold 4, Epoch 100/1000, Train Loss: 0.6220, Test Loss: 0.6885, Test ROC AUC: 0.8605
+2025-11-08 13:37:33,954 - INFO - Fold 4, Epoch 150/1000, Train Loss: 0.4778, Test Loss: 0.5679, Test ROC AUC: 0.9660
+2025-11-08 13:38:07,392 - INFO - Fold 4, Epoch 200/1000, Train Loss: 0.3899, Test Loss: 0.5540, Test ROC AUC: 0.9592
+2025-11-08 13:38:40,875 - INFO - Fold 4, Epoch 250/1000, Train Loss: 0.3026, Test Loss: 0.8566, Test ROC AUC: 0.9286
+2025-11-08 13:38:52,244 - INFO - Early stopping triggered for fold 4 at epoch 267.
+2025-11-08 13:38:52,989 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:38:52,997 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:38:53,037 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:38:53,043 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:38:54,597 - INFO - Starting Fold 5/5
+2025-11-08 13:39:27,520 - INFO - Fold 5, Epoch 50/1000, Train Loss: 0.6288, Test Loss: 0.7530, Test ROC AUC: 0.8231
+2025-11-08 13:40:00,683 - INFO - Fold 5, Epoch 100/1000, Train Loss: 0.5027, Test Loss: 0.6761, Test ROC AUC: 0.8469
+2025-11-08 13:40:33,068 - INFO - Early stopping triggered for fold 5 at epoch 149.
+2025-11-08 13:40:33,800 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:40:33,808 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:40:33,846 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:40:33,852 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-08 13:40:35,638 - INFO - All fold metrics saved to 14102025_test/all_fold_metrics.csv
+2025-11-08 13:40:35,638 - INFO - Successfully created results.json at 14102025_test/results.json
+2025-11-08 13:40:35,648 - INFO - DEBUG_METRIC: F1 Discrepancy Analysis:
+  - Confusion Matrix (TN, FP, FN, TP): 15, 6, 1, 13
+  - pos_label=1: P=0.6842, R=0.9286, F1_check=0.7879, Manual_F1=0.7879
+  - pos_label=0: P=0.9375, R=0.7143, F1_check=0.8108, Manual_F1=0.8108
+  - Correct F1 (Matching P/R manual calc): 0.7879

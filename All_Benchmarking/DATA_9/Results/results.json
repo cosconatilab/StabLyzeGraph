@@ -1,0 +1,6 @@
+{
+    "status": "success",
+    "GNN_learning_curve": "14102025_test/fold_1/GNN_learning_curve.png",
+    "probability_plots": "14102025_test/fold_1/probability_plots.png",
+    "all_fold_metrics": "14102025_test/all_fold_metrics.csv"
+}
