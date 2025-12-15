@@ -1,0 +1,2 @@
+fold,dropout_rate,learning_rate,l2_regularization,Precision,Recall,FPR,F1 Score,ROC AUC,PRC AUC,MCC,Optimal Threshold
+3,0.2,1e-05,0.0001,1.0,0.875,0.0,0.9333333333333333,1.0,1.0,0.8874119674649423,0.4534798
