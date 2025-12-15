@@ -1,5 +1,3 @@
-import multiprocessing as mp
-mp.set_start_method("spawn", force=True)
 import gc
 import os
 import numpy as np
@@ -50,7 +48,6 @@ import time # Added for GUI integration
 import json # Added for GUI integration
 import sys # Added for GUI integration
 
-
 matplotlib.use("Agg")  # Use non-GUI backend for rendering to files.
 
 # Set up logging for better tracking
@@ -61,7 +58,7 @@ warnings.filterwarnings("ignore")  # Ignore warnings for cleaner output
 
 # Default random seed (can be overridden by argument)
 DEFAULT_SEED = 42
-optimal_threshold = 0.75 # Default optimal threshold
+optimal_threshold = 0.85 # Default optimal threshold
 
 # Set seed for CPU operations initially
 torch.manual_seed(DEFAULT_SEED)
@@ -87,7 +84,7 @@ class GNNFeatureExtractor(torch.nn.Module):
 
     def __init__(self, in_features, hidden_features, dropout_rate, ratio):
         super(GNNFeatureExtractor, self).__init__()
-        self.input_dim = in_features  # Store input dimension as an attribute
+        print(f"DEBUG: Initializing model with in_features={in_features}, hidden_features={hidden_features}") # DEBUG
         self.gat1 = GATConv(
             in_features, int(hidden_features / 4), heads=4
         )
@@ -106,6 +103,7 @@ class GNNFeatureExtractor(torch.nn.Module):
         self.sage_batch_norm = BatchNorm1d(hidden_features)
         self.graph_batch_norm = BatchNorm1d(hidden_features)
         self.lin_batch_norm = BatchNorm1d(int(hidden_features / 2))
+        print("DEBUG: Model layers initialized") # DEBUG
 
     def forward(self, x, edge_index, edge_attr, batch):
         x = self.gat1(x, edge_index, edge_attr)
@@ -134,6 +132,7 @@ class GNNFeatureExtractor(torch.nn.Module):
 
         return single_output, fingerprint_layer
 
+print("DEBUG: Defining helper functions") # DEBUG
 ########################
 ### HELPER FUNCTIONS ###
 ########################
@@ -679,7 +678,6 @@ def run_screening_pipeline(
     return ranked_mutants_path, wild_type_pred, prob_hist_path, top_mut_path, mutant_fasta_path
 
 if __name__ == "__main__":
-    mp.set_start_method("spawn", force=True)
     parser = argparse.ArgumentParser(description="StablyzeGraph Screening Pipeline")
     parser.add_argument("--active", required=True, help="Path to active sequences CSV file")
     parser.add_argument("--inactive", required=True, help="Path to inactive sequences CSV file")

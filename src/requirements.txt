@@ -9,6 +9,7 @@ joblib
 matplotlib
 seaborn
 tqdm
-
 PyQt6
+PyQt5
 pyqtgraph
+optuna

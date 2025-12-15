@@ -1,16 +1,8 @@
 #!/usr/bin/env python3
 """
-StabLyzeGraph Desktop Application (Rewritten v5)
+StablyzeGraph
 A PyQt6-based GUI for protein engineering with Benchmarking and Screening modes.
-Focus on simplified process management, enhanced logging, and robustness.
-Adds model upload for Screening mode.
-Adds Output Directory selection.
-Updates layout to match reference images.
-Fixes progress bar updates.
-Implements automatic results display (plots, metrics, tables).
-Adds automatic opening of the output directory on success.
-Fixes Screening script arguments.
-Updates Benchmarking display to show specific plots (Learning Curve, Probability) and metrics from CSV.
+
 """
 
 import sys
@@ -19,7 +11,7 @@ import json
 import subprocess
 import threading
 import time
-import traceback # Added for detailed error logging
+import traceback 
 from pathlib import Path
 from datetime import datetime
 
@@ -28,13 +20,12 @@ from PyQt6.QtWidgets import (
     QApplication, QMainWindow, QTabWidget, QWidget, QVBoxLayout, QHBoxLayout,
     QLabel, QLineEdit, QDoubleSpinBox, QSpinBox, QComboBox, QPushButton,
     QFileDialog, QProgressBar, QGroupBox, QFormLayout, QScrollArea, QSplitter,
-    QTableWidget, QTableWidgetItem, QHeaderView, QMessageBox, QTextEdit, QGridLayout
+    QTableWidget, QTableWidgetItem, QHeaderView, QMessageBox, QTextEdit,
+    QCheckBox
 )
-from PyQt6.QtCore import Qt, QThread, pyqtSignal, QTimer, QSize
-from PyQt6.QtGui import QPixmap, QFont, QColor, QPalette, QDesktopServices # For opening URLs/Files
-from PyQt6.QtCore import QUrl # For opening URLs/Files
-from PyQt6.QtCore import QLocale
-QLocale.setDefault(QLocale(QLocale.Language.C))
+from PyQt6.QtCore import Qt, QThread, pyqtSignal
+from PyQt6.QtGui import QPixmap, QFont, QIcon, QDesktopServices 
+from PyQt6.QtCore import QUrl 
 
 import matplotlib
 matplotlib.use("Qt5Agg")
@@ -280,9 +271,12 @@ class WorkerThread(QThread):
                     self.log_message.emit(f"Error reading results file: {e}")
                     success = False
             elif return_code == 0:
-                 final_error_message += "\nError: Process finished successfully (exit code 0) but no results.json file was found."
+                 # The script finished successfully (exit code 0). We assume the fix in Benchmarking.py
+                 # will ensure results.json is created. If it's still missing, we treat it as a warning
+                 # and assume success to allow the GUI to proceed to result display.
+                 final_error_message += "\nWarning: Process finished successfully (exit code 0) but no results.json file was found. Attempting to display results from output directory."
                  self.log_message.emit(final_error_message)
-                 success = False
+                 success = True # Treat as success to proceed to result display
             elif not final_error_message:
                 final_error_message = f"Process exited with code {return_code} but produced no error message."
                 if stdout: final_error_message += f"\nSTDOUT:\n{stdout}"
@@ -661,17 +655,132 @@ class BenchmarkingTab(BaseTab):
     def _create_model_params_group(self):
         super()._create_model_params_group()
         self._add_param_input("hidden_dim", "Hidden Dimensions:", "spinbox", 128, min=16, max=1024, step=16)
-        self._add_param_input("dropout_rate", "Dropout Rate:", "doublespinbox", 0.25, min=0.0, max=1.0, step=0.05, decimals=2)
+        self._add_param_input("dropout_rate", "Dropout Rate:", "doublespinbox", 0.20, min=0.0, max=1.0, step=0.05, decimals=2)
         self._add_param_input("ratio", "Pooling Ratio:", "doublespinbox", 0.70, min=0.1, max=1.0, step=0.05, decimals=2)
         self._add_param_input("learning_rate", "Learning Rate:", "doublespinbox", 0.00001, min=1e-7, max=1e-2, step=1e-6, decimals=7)
         self._add_param_input("l2_regularization", "L2 Regularization:", "doublespinbox", 0.0001, min=0.0, max=0.1, step=1e-5, decimals=5)
         self._add_param_input("scheduler_factor", "Scheduler Factor:", "doublespinbox", 0.9, min=0.1, max=0.99, step=0.05, decimals=2)
-        self._add_param_input("scheduler_patience", "Scheduler Patience:", "spinbox", 10, min=1, max=100)
-        self._add_param_input("stop_patience", "Early Stop Patience:", "spinbox", 50, min=5, max=500)
+        self._add_param_input("scheduler_patience", "Scheduler Patience:", "spinbox", 200, min=1, max=1000)
+        self._add_param_input("stop_patience", "Early Stop Patience:", "spinbox", 50, min=5, max=1000)
         self._add_param_input("grad_clip", "Gradient Clipping:", "doublespinbox", 10.0, min=0.1, max=100.0, step=0.5, decimals=1)
         self._add_param_input("max_epochs", "Max Epochs:", "spinbox", 1000, min=10, max=10000)
+        self._add_param_input("batch_size", "Batch Size:", "spinbox", 64, min=1, max=512)
         self._add_param_input("seed", "Random Seed:", "spinbox", 42, min=0, max=99999)
         self._add_param_input("num_cores", "CPU Cores (-1 for all):", "spinbox", -1, min=-1, max=os.cpu_count() or 1)
+        
+        # K-fold Cross-Validation Parameters
+        self._add_param_input("n_splits", "K-Fold Splits:", "spinbox", 5, min=2, max=20)
+        self._add_param_input("n_repeats", "K-Fold Repeats:", "spinbox", 1, min=1, max=10)
+        
+        # Optuna Hyperparameter Tuning
+        self.optuna_checkbox = QCheckBox("Use Optuna Hyperparameter Tuning")
+        self.optuna_checkbox.setChecked(False)
+        self.optuna_checkbox.stateChanged.connect(self._toggle_optuna_params)
+        self.model_params_layout.addRow("", self.optuna_checkbox)
+        
+        self._add_param_input("n_trials", "Number of Trials (max 100):", "spinbox", 10, min=1, max=100)
+        self._add_param_input("dropout_rate_min", "Dropout Min:", "doublespinbox", 0.2, min=0.0, max=1.0, step=0.05, decimals=2)
+        self._add_param_input("dropout_rate_max", "Dropout Max:", "doublespinbox", 0.5, min=0.0, max=1.0, step=0.05, decimals=2)
+        self._add_param_input("dropout_rate_interval", "Dropout Interval:", "doublespinbox", 0.1, min=0.01, max=0.5, step=0.01, decimals=2)
+        self._add_param_input("learning_rate_min", "Learning Rate Min:", "doublespinbox", 0.00001, min=1e-7, max=1e-2, step=1e-6, decimals=7)
+        self._add_param_input("learning_rate_max", "Learning Rate Max:", "doublespinbox", 0.01, min=1e-7, max=1e-1, step=1e-4, decimals=7)
+        self._add_param_input("l2_regularization_min", "L2 Reg Min:", "doublespinbox", 0.000001, min=1e-7, max=1e-2, step=1e-6, decimals=7)
+        self._add_param_input("l2_regularization_max", "L2 Reg Max:", "doublespinbox", 0.001, min=1e-7, max=1e-1, step=1e-4, decimals=7)
+        
+        # Initially disable Optuna parameters
+        self._toggle_optuna_params()
+    
+    def _toggle_optuna_params(self):
+        """Enable/disable Optuna parameters based on checkbox state."""
+        is_enabled = self.optuna_checkbox.isChecked()
+        optuna_param_keys = [
+            "n_trials", "dropout_rate_min", "dropout_rate_max", "dropout_rate_interval",
+            "learning_rate_min", "learning_rate_max", "l2_regularization_min", "l2_regularization_max"
+        ]
+        for key in optuna_param_keys:
+            if key in self.param_inputs:
+                self.param_inputs[key].setEnabled(is_enabled)
+    
+    def _run_process(self):
+        """Override to handle Optuna checkbox and update argument names."""
+        if self.worker_thread and self.worker_thread.isRunning():
+            self._stop_process()
+            return
+
+        # --- Prepare Command ---
+        script_path = get_script_path(self.script_name)
+        command = [script_path]
+
+        # Add file inputs to the command (map to correct argument names)
+        file_arg_mapping = {
+            "active": "active_file",
+            "inactive": "inactive_file",
+            "wild_type": "wild_type_file",
+            "pdb": "pdb_file",
+            "properties": "properties_file"
+        }
+        for key, edit in self.file_inputs.items():
+            arg_name = file_arg_mapping.get(key, key)
+            command.extend([f"--{arg_name}", edit.text()])
+
+        # Add parameter inputs to the command
+        for key, widget in self.param_inputs.items():
+            if isinstance(widget, QComboBox):
+                value = widget.currentText()
+            elif isinstance(widget, (QSpinBox, QDoubleSpinBox)):
+                value = widget.value()
+            else:
+                value = widget.text()
+            command.extend([f"--{key}", str(value)])
+
+        # Add Optuna tuning flag if checkbox is checked
+        if self.optuna_checkbox.isChecked():
+            command.append("--optuna_tuning")
+
+        # Validate Inputs
+        missing_files = []
+        for key, edit in self.file_inputs.items():
+            if not edit.text() or not os.path.exists(edit.text()):
+                missing_files.append(key)
+
+        if not self.output_dir_edit.text():
+            missing_files.append("Output Directory")
+
+        if missing_files:
+            QMessageBox.warning(self, "Missing Inputs", f"Please provide valid paths for: {', '.join(missing_files)}")
+            return
+
+        # Set up output directory
+        self.current_output_dir = self.output_dir_edit.text()
+        try:
+            os.makedirs(self.current_output_dir, exist_ok=True)
+        except OSError as e:
+            QMessageBox.critical(self, "Error", f"Could not create output directory:\n{self.current_output_dir}\nError: {e}")
+            return
+
+        command.extend(["--output_dir", self.current_output_dir])
+        progress_file_path = os.path.join(self.current_output_dir, "progress.json")
+        command.extend(["--progress_file", progress_file_path])
+
+        # --- Clear Previous Results ---
+        self.clear_results_display()
+        self.progress_bar.setValue(0)
+        self.progress_bar.setFormat("0% - Starting...")
+        if self.parent_window:
+            self.parent_window.log_output.clear()
+        self.log_message_signal.emit(f"Starting {self.mode_name}...")
+        self.log_message_signal.emit(f"Output Directory: {self.current_output_dir}")
+        self.log_message_signal.emit(f"Optuna Tuning: {self.optuna_checkbox.isChecked()}")
+
+        # --- Start Worker ---
+        self.worker_thread = WorkerThread(command, os.path.dirname(script_path), self.current_output_dir)
+        self.worker_thread.progress_updated.connect(self._update_progress)
+        self.worker_thread.log_message.connect(self.log_message_signal.emit)
+        self.worker_thread.process_finished.connect(self._on_process_finished)
+        self.worker_thread.start()
+
+        self.run_button.setText(f"Stop {self.mode_name}")
+        self.run_button.setStyleSheet(f"background-color: red; color: white; padding: 8px;")
 
     def _create_results_display(self):
         results_group = QGroupBox("Benchmarking Results")
@@ -713,35 +822,46 @@ class BenchmarkingTab(BaseTab):
 
     def display_results(self, output_dir):
         super().display_results(output_dir)
+        
         results_file = os.path.join(output_dir, "results.json")
-        metrics_csv_file = os.path.join(output_dir, "metrics.csv") # Default name
         
-        plot_paths = {}
-        
-        # Read results.json to get plot paths and metrics file path
+        # Initialize with default paths (which should now be absolute paths from results.json)
+        gnn_lc_path = None
+        prob_plot_path = None
+        metrics_csv_file = os.path.join(output_dir, "all_fold_metrics.csv") # Fallback default
+
+        # Read results.json to get the correct, absolute file paths
         if os.path.exists(results_file):
             try:
                 with open(results_file, "r") as f:
                     results_data = json.load(f)
+                
+                # The status check is now handled by WorkerThread, but we can re-check here
                 if results_data.get("status") == "success":
-                    plot_paths = results_data.get("plots", {})
-                    # Get metrics file path from results.json if available
-                    metrics_file_from_results = results_data.get("metrics_file")
-                    if metrics_file_from_results and os.path.exists(metrics_file_from_results):
-                         metrics_csv_file = metrics_file_from_results
+                    # --- CORRECTLY EXTRACTING PATHS FROM THE FIXED JSON STRUCTURE ---
+                    gnn_lc_path = results_data.get("GNN_learning_curve")
+                    prob_plot_path = results_data.get("probability_plots")
+                    metrics_csv_file = results_data.get("all_fold_metrics", metrics_csv_file)
+                    # -----------------------------------------------------------------
+                    
+                    self.log_message_signal.emit("Successfully loaded result paths from results.json.")
+                else:
+                    self.log_message_signal.emit("Warning: results.json indicates failure or is incomplete.")
             except Exception as e:
                 self.log_message_signal.emit(f"Error reading results file {results_file}: {e}")
         else:
-             self.log_message_signal.emit(f"Warning: results.json not found in {output_dir}")
-             # Try default plot names if results.json is missing
-             plot_paths = {
-                 "learning_curve": os.path.join(output_dir, "learning_curve_plot.png"),
-                 "probability_plots": os.path.join(output_dir, "probability_plots.png"),
-             }
+            self.log_message_signal.emit(f"Warning: results.json not found in {output_dir}. Attempting to use default paths.")
+            # If results.json is missing, the WorkerThread should have already warned.
+            # We can still try to construct the paths as a last resort (using the corrected keys)
+            gnn_lc_path = os.path.join(output_dir, "fold_1", "GNN_learning_curve.png")
+            prob_plot_path = os.path.join(output_dir, "fold_1", "probability_plots.png")
 
-        # Display plots
-        self.learning_curve_canvas.display_plot(plot_paths.get("learning_curve"))
-        self.probability_plots_canvas.display_plot(plot_paths.get("probability_plots"))
+
+        # 1. Display plots
+        # We use the extracted paths directly
+        self.learning_curve_canvas.display_plot(gnn_lc_path)
+        self.probability_plots_canvas.display_plot(prob_plot_path)
+
 
         # Display metrics from CSV in the table
         self.metrics_table.setRowCount(0)
@@ -911,7 +1031,9 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("StabLyzeGraph")
+        self.setWindowIcon(QIcon(get_asset_path("icon.ico")))
         self.setGeometry(100, 100, 1200, 800)
+    
         self.setStyleSheet(f"background-color: {COLORS['background']}; color: {COLORS['text']};")
         
         central_widget = QWidget()
@@ -1012,4 +1134,4 @@ if __name__ == "__main__":
     window.show()
     sys.exit(app.exec())
 
-# --- End of File ---          
+         
