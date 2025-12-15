@@ -1,0 +1,476 @@
+DEBUG: Script execution started
+DEBUG: Imported gc
+DEBUG: Imported os
+DEBUG: Imported numpy
+DEBUG: Imported pandas
+DEBUG: Imported torch
+DEBUG: Imported BatchNorm1d
+DEBUG: Imported torch.nn.functional
+Error importing huggingface_hub.hf_api: No module named 'yaml'
+DEBUG: Imported torch_geometric.data
+DEBUG: Imported torch_geometric.loader
+DEBUG: Imported torch_geometric.nn
+DEBUG: Imported Bio.SeqIO
+DEBUG: Imported Bio.AlignIO
+DEBUG: Imported Bio.Align.AlignInfo
+DEBUG: Imported Bio.PDB.PDBParser
+DEBUG: Imported sklearn.preprocessing
+DEBUG: Imported sklearn.svm
+DEBUG: Imported sklearn.ensemble
+DEBUG: Imported sklearn.linear_model
+DEBUG: Imported sklearn.model_selection
+DEBUG: Imported sklearn.metrics
+DEBUG: Imported imblearn.over_sampling
+DEBUG: Imported random
+DEBUG: Imported subprocess
+DEBUG: Imported logging
+DEBUG: Imported joblib
+DEBUG: Imported warnings
+DEBUG: Imported matplotlib
+DEBUG: Imported matplotlib.pyplot
+DEBUG: Imported seaborn
+DEBUG: Imported argparse
+DEBUG: Imported json
+DEBUG: Imported time
+DEBUG: Imported Bio.Seq
+DEBUG: Imported optuna
+DEBUG: Script started - imports completed
+DEBUG: Setting matplotlib backend
+DEBUG: Matplotlib backend set
+DEBUG: Setting up logging
+DEBUG: Logging setup complete, warnings ignored
+DEBUG: Setting random seeds
+DEBUG: CPU seeds set
+DEBUG: Checking for CUDA device
+DEBUG: Using device: cpu
+DEBUG: Defining model class
+DEBUG: Defining helper functions
+DEBUG: Defining main pipeline function
+DEBUG: Defining Optuna objective function
+DEBUG: Starting main script execution (__name__ == '__main__')
+DEBUG: Parsing arguments
+DEBUG: Arguments parsed: active_file=GPCR_Active_labeled.csv, inactive_file=GPCR_Inactive_labeled.csv
+DEBUG: Optuna tuning enabled: False, n_trials=10
+DEBUG: Setting up environment based on args
+DEBUG: Using device: cpu
+DEBUG: Creating output directory: 14102025_test
+DEBUG: Progress updated: Initializing...
+DEBUG: Progress updated: Starting benchmarking pipeline...
+DEBUG: Calling run_benchmarking_pipeline function...
+DEBUG: Starting benchmarking pipeline with active_file=GPCR_Active_labeled.csv, inactive_file=GPCR_Inactive_labeled.csv
+DEBUG: Parameters - hidden_dim=128, dropout_rate=0.2, learning_rate=1e-05, l2_regularization=0.0001
+DEBUG: Output directory: 14102025_test
+DEBUG: Progress updated: Preparing data...
+DEBUG: SEED: 42, DEVICE: cpu
+DEBUG: Reading active sequences
+DEBUG: Reading sequence file GPCR_Active_labeled.csv, is_active=True
+DEBUG: Read 67 sequences
+DEBUG: Reading inactive sequences
+DEBUG: Reading sequence file GPCR_Inactive_labeled.csv, is_active=False
+DEBUG: Read 71 sequences
+DEBUG: Reading wild type sequence
+DEBUG: Reading FASTA file wild_type.fasta
+DEBUG: Read 1 wild type sequences
+DEBUG: Progress updated: Extracting coordinates...
+DEBUG: Extracting coordinates for active sequences
+DEBUG: Extracted coordinates for 67 active sequences
+DEBUG: Extracting coordinates for inactive sequences
+DEBUG: Extracted coordinates for 71 inactive sequences
+DEBUG: Progress updated: Loading features...
+DEBUG: Loading property dictionaries
+DEBUG: Loading dictionaries from amino_acid_properties.csv
+DEBUG: Loaded 4 dictionaries
+DEBUG: Writing combined sequences to combined_sequences.fasta
+DEBUG: Writing active sequences to active_sequences.fasta
+DEBUG: Writing inactive sequences to inactive_sequences.fasta
+DEBUG: Progress updated: Calculating conservation scores...
+DEBUG: Calculating conservation scores for active sequences
+DEBUG: Calculating conservation scores from active_sequences.fasta
+DEBUG: Running Clustal Omega
+DEBUG: Clustal Omega completed successfully
+DEBUG: Reading alignment file aligned_sequences.aln
+DEBUG: Alignment read successfully, length: 164
+DEBUG: Consensus sequence calculated, length: 164
+DEBUG: Calculated 164 conservation scores
+DEBUG: Progress updated: Generating graphs...
+DEBUG: Converting active sequences to graphs
+DEBUG: Converting active sequence 10/67 to graph
+DEBUG: Converting active sequence 20/67 to graph
+DEBUG: Converting active sequence 30/67 to graph
+DEBUG: Converting active sequence 40/67 to graph
+DEBUG: Converting active sequence 50/67 to graph
+DEBUG: Converting active sequence 60/67 to graph
+DEBUG: Converting active sequence 67/67 to graph
+DEBUG: Converted 67 active sequences to graphs
+DEBUG: Calculating conservation scores for inactive sequences
+DEBUG: Calculating conservation scores from inactive_sequences.fasta
+DEBUG: Running Clustal Omega
+DEBUG: Clustal Omega completed successfully
+DEBUG: Reading alignment file aligned_sequences.aln
+DEBUG: Alignment read successfully, length: 164
+DEBUG: Consensus sequence calculated, length: 164
+DEBUG: Calculated 164 conservation scores
+DEBUG: Converting inactive sequences to graphs
+DEBUG: Converting inactive sequence 10/71 to graph
+DEBUG: Converting inactive sequence 20/71 to graph
+DEBUG: Converting inactive sequence 30/71 to graph
+DEBUG: Converting inactive sequence 40/71 to graph
+DEBUG: Converting inactive sequence 50/71 to graph
+DEBUG: Converting inactive sequence 60/71 to graph
+DEBUG: Converting inactive sequence 70/71 to graph
+DEBUG: Converting inactive sequence 71/71 to graph
+DEBUG: Converted 71 inactive sequences to graphs
+DEBUG: Combined 138 features with 138 labels
+DEBUG: Progress updated: Splitting data...
+DEBUG: Input dimension: 5
+DEBUG: Calculating class weights
+DEBUG: Class weights - positive: 67, negative: 71, pos_weight: 1.0597014427185059
+DEBUG: Setting up K-fold cross-validation with n_splits=5, n_repeats=1
+DEBUG: ========== Starting Fold 1/5 ==========
+DEBUG: Fold output directory: 14102025_test/fold_1
+DEBUG: Splitting data for fold 1
+DEBUG: Fold 1 - train size: 110, test size: 28
+DEBUG: Initializing model for fold 1
+DEBUG: Initializing model with in_features=5, hidden_features=128
+DEBUG: Model layers initialized
+DEBUG: Model, optimizer, scheduler, and criterion initialized for fold 1
+DEBUG: Resampling minority class for fold 1
+DEBUG: Minority class count: 53
+DEBUG: Using SMOTE with k_neighbors=10
+DEBUG: Resampled to 114 samples
+DEBUG: Created datasets for fold 1: train=114, test=28
+DEBUG: Creating DataLoaders for fold 1
+DEBUG: DataLoaders created for fold 1
+DEBUG: Starting training loop for fold 1
+DEBUG: Saved best model for fold 1 at epoch 1
+DEBUG: Saved best model for fold 1 at epoch 15
+DEBUG: Saved best model for fold 1 at epoch 16
+DEBUG: Saved best model for fold 1 at epoch 17
+DEBUG: Saved best model for fold 1 at epoch 26
+DEBUG: Saved best model for fold 1 at epoch 38
+DEBUG: Saved best model for fold 1 at epoch 46
+DEBUG: Saved best model for fold 1 at epoch 47
+DEBUG: Saved best model for fold 1 at epoch 49
+DEBUG: Fold 1, Epoch 50/1000, Train Loss: 0.6290, Test Loss: 0.6920, Test ROC AUC: 0.6990
+DEBUG: Saved best model for fold 1 at epoch 50
+DEBUG: Saved best model for fold 1 at epoch 51
+DEBUG: Saved best model for fold 1 at epoch 52
+DEBUG: Saved best model for fold 1 at epoch 53
+DEBUG: Saved best model for fold 1 at epoch 54
+DEBUG: Saved best model for fold 1 at epoch 55
+DEBUG: Saved best model for fold 1 at epoch 57
+DEBUG: Saved best model for fold 1 at epoch 58
+DEBUG: Saved best model for fold 1 at epoch 60
+DEBUG: Saved best model for fold 1 at epoch 61
+DEBUG: Saved best model for fold 1 at epoch 62
+DEBUG: Saved best model for fold 1 at epoch 63
+DEBUG: Saved best model for fold 1 at epoch 64
+DEBUG: Saved best model for fold 1 at epoch 65
+DEBUG: Saved best model for fold 1 at epoch 66
+DEBUG: Saved best model for fold 1 at epoch 67
+DEBUG: Fold 1, Epoch 100/1000, Train Loss: 0.6050, Test Loss: 0.6104, Test ROC AUC: 0.8571
+DEBUG: Saved best model for fold 1 at epoch 101
+DEBUG: Saved best model for fold 1 at epoch 103
+DEBUG: Saved best model for fold 1 at epoch 104
+DEBUG: Saved best model for fold 1 at epoch 105
+DEBUG: Saved best model for fold 1 at epoch 106
+DEBUG: Saved best model for fold 1 at epoch 107
+DEBUG: Saved best model for fold 1 at epoch 108
+DEBUG: Saved best model for fold 1 at epoch 110
+DEBUG: Saved best model for fold 1 at epoch 111
+DEBUG: Saved best model for fold 1 at epoch 112
+DEBUG: Saved best model for fold 1 at epoch 113
+DEBUG: Saved best model for fold 1 at epoch 114
+DEBUG: Saved best model for fold 1 at epoch 115
+DEBUG: Saved best model for fold 1 at epoch 116
+DEBUG: Saved best model for fold 1 at epoch 117
+DEBUG: Saved best model for fold 1 at epoch 118
+DEBUG: Saved best model for fold 1 at epoch 121
+DEBUG: Saved best model for fold 1 at epoch 122
+DEBUG: Saved best model for fold 1 at epoch 123
+DEBUG: Saved best model for fold 1 at epoch 124
+DEBUG: Saved best model for fold 1 at epoch 125
+DEBUG: Saved best model for fold 1 at epoch 126
+DEBUG: Saved best model for fold 1 at epoch 144
+DEBUG: Saved best model for fold 1 at epoch 145
+DEBUG: Saved best model for fold 1 at epoch 146
+DEBUG: Saved best model for fold 1 at epoch 147
+DEBUG: Saved best model for fold 1 at epoch 148
+DEBUG: Saved best model for fold 1 at epoch 149
+DEBUG: Fold 1, Epoch 150/1000, Train Loss: 0.5574, Test Loss: 0.5502, Test ROC AUC: 0.9082
+DEBUG: Saved best model for fold 1 at epoch 150
+DEBUG: Saved best model for fold 1 at epoch 151
+DEBUG: Saved best model for fold 1 at epoch 152
+DEBUG: Saved best model for fold 1 at epoch 153
+DEBUG: Saved best model for fold 1 at epoch 154
+DEBUG: Saved best model for fold 1 at epoch 155
+DEBUG: Saved best model for fold 1 at epoch 156
+DEBUG: Saved best model for fold 1 at epoch 170
+DEBUG: Saved best model for fold 1 at epoch 171
+DEBUG: Saved best model for fold 1 at epoch 172
+DEBUG: Saved best model for fold 1 at epoch 173
+DEBUG: Saved best model for fold 1 at epoch 174
+DEBUG: Saved best model for fold 1 at epoch 175
+DEBUG: Saved best model for fold 1 at epoch 176
+DEBUG: Fold 1, Epoch 200/1000, Train Loss: 0.4995, Test Loss: 0.5381, Test ROC AUC: 0.8929
+DEBUG: Early stopping triggered for fold 1 at epoch 226
+DEBUG: Loading best model for fold 1
+DEBUG: Calculating metrics for fold 1
+DEBUG: Optimal threshold for fold 1: 0.6178252100944519
+DEBUG: Fold 1 metrics - Precision: 1.0000, Recall: 0.7143, FPR: 0.0000, F1: 0.8333, ROC AUC: 0.9439, PRC AUC: 0.9559, MCC: 0.7454
+DEBUG: Generating plots for fold 1
+DEBUG: Saved learning curve for fold 1
+DEBUG: Saved probability plots for fold 1
+DEBUG: Saved ROC curve for fold 1
+DEBUG: Saved PRC curve for fold 1
+DEBUG: Saved metrics for fold 1
+DEBUG: ========== Completed Fold 1/5 ==========
+DEBUG: ========== Starting Fold 2/5 ==========
+DEBUG: Fold output directory: 14102025_test/fold_2
+DEBUG: Splitting data for fold 2
+DEBUG: Fold 2 - train size: 110, test size: 28
+DEBUG: Initializing model for fold 2
+DEBUG: Initializing model with in_features=5, hidden_features=128
+DEBUG: Model layers initialized
+DEBUG: Model, optimizer, scheduler, and criterion initialized for fold 2
+DEBUG: Resampling minority class for fold 2
+DEBUG: Minority class count: 53
+DEBUG: Using SMOTE with k_neighbors=10
+DEBUG: Resampled to 114 samples
+DEBUG: Created datasets for fold 2: train=114, test=28
+DEBUG: Creating DataLoaders for fold 2
+DEBUG: DataLoaders created for fold 2
+DEBUG: Starting training loop for fold 2
+DEBUG: Saved best model for fold 2 at epoch 1
+DEBUG: Saved best model for fold 2 at epoch 2
+DEBUG: Saved best model for fold 2 at epoch 3
+DEBUG: Saved best model for fold 2 at epoch 4
+DEBUG: Fold 2, Epoch 50/1000, Train Loss: 0.6311, Test Loss: 0.7749, Test ROC AUC: 0.4541
+DEBUG: Early stopping triggered for fold 2 at epoch 54
+DEBUG: Loading best model for fold 2
+DEBUG: Calculating metrics for fold 2
+DEBUG: Optimal threshold for fold 2: 0.5041171312332153
+DEBUG: Fold 2 metrics - Precision: 0.7500, Recall: 0.6429, FPR: 0.2143, F1: 0.6923, ROC AUC: 0.7347, PRC AUC: 0.7696, MCC: 0.4330
+DEBUG: Generating plots for fold 2
+DEBUG: Saved learning curve for fold 2
+DEBUG: Saved probability plots for fold 2
+DEBUG: Saved ROC curve for fold 2
+DEBUG: Saved PRC curve for fold 2
+DEBUG: Saved metrics for fold 2
+DEBUG: ========== Completed Fold 2/5 ==========
+DEBUG: ========== Starting Fold 3/5 ==========
+DEBUG: Fold output directory: 14102025_test/fold_3
+DEBUG: Splitting data for fold 3
+DEBUG: Fold 3 - train size: 110, test size: 28
+DEBUG: Initializing model for fold 3
+DEBUG: Initializing model with in_features=5, hidden_features=128
+DEBUG: Model layers initialized
+DEBUG: Model, optimizer, scheduler, and criterion initialized for fold 3
+DEBUG: Resampling minority class for fold 3
+DEBUG: Minority class count: 54
+DEBUG: Using SMOTE with k_neighbors=10
+DEBUG: Resampled to 112 samples
+DEBUG: Created datasets for fold 3: train=112, test=28
+DEBUG: Creating DataLoaders for fold 3
+DEBUG: DataLoaders created for fold 3
+DEBUG: Starting training loop for fold 3
+DEBUG: Saved best model for fold 3 at epoch 1
+DEBUG: Saved best model for fold 3 at epoch 12
+DEBUG: Saved best model for fold 3 at epoch 13
+DEBUG: Saved best model for fold 3 at epoch 14
+DEBUG: Saved best model for fold 3 at epoch 15
+DEBUG: Saved best model for fold 3 at epoch 29
+DEBUG: Saved best model for fold 3 at epoch 30
+DEBUG: Saved best model for fold 3 at epoch 31
+DEBUG: Saved best model for fold 3 at epoch 34
+DEBUG: Saved best model for fold 3 at epoch 35
+DEBUG: Saved best model for fold 3 at epoch 36
+DEBUG: Saved best model for fold 3 at epoch 40
+DEBUG: Saved best model for fold 3 at epoch 41
+DEBUG: Saved best model for fold 3 at epoch 42
+DEBUG: Saved best model for fold 3 at epoch 48
+DEBUG: Saved best model for fold 3 at epoch 49
+DEBUG: Fold 3, Epoch 50/1000, Train Loss: 0.6453, Test Loss: 0.6764, Test ROC AUC: 0.7949
+DEBUG: Saved best model for fold 3 at epoch 50
+DEBUG: Saved best model for fold 3 at epoch 51
+DEBUG: Saved best model for fold 3 at epoch 52
+DEBUG: Saved best model for fold 3 at epoch 53
+DEBUG: Saved best model for fold 3 at epoch 54
+DEBUG: Saved best model for fold 3 at epoch 55
+DEBUG: Saved best model for fold 3 at epoch 58
+DEBUG: Saved best model for fold 3 at epoch 59
+DEBUG: Fold 3, Epoch 100/1000, Train Loss: 0.5995, Test Loss: 0.6690, Test ROC AUC: 0.8923
+DEBUG: Early stopping triggered for fold 3 at epoch 109
+DEBUG: Loading best model for fold 3
+DEBUG: Calculating metrics for fold 3
+DEBUG: Optimal threshold for fold 3: 0.524857759475708
+DEBUG: Fold 3 metrics - Precision: 0.8462, Recall: 0.8462, FPR: 0.1333, F1: 0.8462, ROC AUC: 0.8923, PRC AUC: 0.7883, MCC: 0.7128
+DEBUG: Generating plots for fold 3
+DEBUG: Saved learning curve for fold 3
+DEBUG: Saved probability plots for fold 3
+DEBUG: Saved ROC curve for fold 3
+DEBUG: Saved PRC curve for fold 3
+DEBUG: Saved metrics for fold 3
+DEBUG: ========== Completed Fold 3/5 ==========
+DEBUG: ========== Starting Fold 4/5 ==========
+DEBUG: Fold output directory: 14102025_test/fold_4
+DEBUG: Splitting data for fold 4
+DEBUG: Fold 4 - train size: 111, test size: 27
+DEBUG: Initializing model for fold 4
+DEBUG: Initializing model with in_features=5, hidden_features=128
+DEBUG: Model layers initialized
+DEBUG: Model, optimizer, scheduler, and criterion initialized for fold 4
+DEBUG: Resampling minority class for fold 4
+DEBUG: Minority class count: 54
+DEBUG: Using SMOTE with k_neighbors=10
+DEBUG: Resampled to 114 samples
+DEBUG: Created datasets for fold 4: train=114, test=27
+DEBUG: Creating DataLoaders for fold 4
+DEBUG: DataLoaders created for fold 4
+DEBUG: Starting training loop for fold 4
+DEBUG: Saved best model for fold 4 at epoch 1
+DEBUG: Saved best model for fold 4 at epoch 2
+DEBUG: Saved best model for fold 4 at epoch 3
+DEBUG: Saved best model for fold 4 at epoch 4
+DEBUG: Saved best model for fold 4 at epoch 17
+DEBUG: Fold 4, Epoch 50/1000, Train Loss: 0.6986, Test Loss: 0.9466, Test ROC AUC: 0.5714
+DEBUG: Saved best model for fold 4 at epoch 60
+DEBUG: Saved best model for fold 4 at epoch 61
+DEBUG: Saved best model for fold 4 at epoch 62
+DEBUG: Fold 4, Epoch 100/1000, Train Loss: 0.6550, Test Loss: 0.6813, Test ROC AUC: 0.7967
+DEBUG: Saved best model for fold 4 at epoch 109
+DEBUG: Saved best model for fold 4 at epoch 110
+DEBUG: Saved best model for fold 4 at epoch 112
+DEBUG: Saved best model for fold 4 at epoch 116
+DEBUG: Saved best model for fold 4 at epoch 129
+DEBUG: Saved best model for fold 4 at epoch 130
+DEBUG: Saved best model for fold 4 at epoch 131
+DEBUG: Saved best model for fold 4 at epoch 132
+DEBUG: Saved best model for fold 4 at epoch 133
+DEBUG: Saved best model for fold 4 at epoch 135
+DEBUG: Fold 4, Epoch 150/1000, Train Loss: 0.6043, Test Loss: 0.6522, Test ROC AUC: 0.8407
+DEBUG: Saved best model for fold 4 at epoch 175
+DEBUG: Saved best model for fold 4 at epoch 180
+DEBUG: Saved best model for fold 4 at epoch 181
+DEBUG: Saved best model for fold 4 at epoch 182
+DEBUG: Saved best model for fold 4 at epoch 183
+DEBUG: Saved best model for fold 4 at epoch 184
+DEBUG: Saved best model for fold 4 at epoch 185
+DEBUG: Saved best model for fold 4 at epoch 186
+DEBUG: Saved best model for fold 4 at epoch 187
+DEBUG: Saved best model for fold 4 at epoch 188
+DEBUG: Saved best model for fold 4 at epoch 190
+DEBUG: Fold 4, Epoch 200/1000, Train Loss: 0.5736, Test Loss: 0.5812, Test ROC AUC: 0.9725
+DEBUG: Saved best model for fold 4 at epoch 204
+DEBUG: Saved best model for fold 4 at epoch 205
+DEBUG: Saved best model for fold 4 at epoch 206
+DEBUG: Saved best model for fold 4 at epoch 207
+DEBUG: Saved best model for fold 4 at epoch 211
+DEBUG: Saved best model for fold 4 at epoch 212
+DEBUG: Saved best model for fold 4 at epoch 229
+DEBUG: Saved best model for fold 4 at epoch 230
+DEBUG: Saved best model for fold 4 at epoch 231
+DEBUG: Saved best model for fold 4 at epoch 236
+DEBUG: Saved best model for fold 4 at epoch 237
+DEBUG: Saved best model for fold 4 at epoch 238
+DEBUG: Saved best model for fold 4 at epoch 239
+DEBUG: Saved best model for fold 4 at epoch 241
+DEBUG: Saved best model for fold 4 at epoch 242
+DEBUG: Saved best model for fold 4 at epoch 243
+DEBUG: Saved best model for fold 4 at epoch 247
+DEBUG: Fold 4, Epoch 250/1000, Train Loss: 0.5052, Test Loss: 0.5413, Test ROC AUC: 0.9835
+DEBUG: Saved best model for fold 4 at epoch 275
+DEBUG: Saved best model for fold 4 at epoch 276
+DEBUG: Saved best model for fold 4 at epoch 277
+DEBUG: Saved best model for fold 4 at epoch 278
+DEBUG: Saved best model for fold 4 at epoch 279
+DEBUG: Saved best model for fold 4 at epoch 280
+DEBUG: Saved best model for fold 4 at epoch 299
+DEBUG: Fold 4, Epoch 300/1000, Train Loss: 0.4576, Test Loss: 0.4928, Test ROC AUC: 0.9945
+DEBUG: Saved best model for fold 4 at epoch 300
+DEBUG: Saved best model for fold 4 at epoch 301
+DEBUG: Saved best model for fold 4 at epoch 302
+DEBUG: Saved best model for fold 4 at epoch 303
+DEBUG: Saved best model for fold 4 at epoch 304
+DEBUG: Saved best model for fold 4 at epoch 318
+DEBUG: Saved best model for fold 4 at epoch 319
+DEBUG: Saved best model for fold 4 at epoch 338
+DEBUG: Saved best model for fold 4 at epoch 344
+DEBUG: Saved best model for fold 4 at epoch 345
+DEBUG: Saved best model for fold 4 at epoch 348
+DEBUG: Saved best model for fold 4 at epoch 349
+DEBUG: Fold 4, Epoch 350/1000, Train Loss: 0.3918, Test Loss: 0.4490, Test ROC AUC: 1.0000
+DEBUG: Saved best model for fold 4 at epoch 350
+DEBUG: Saved best model for fold 4 at epoch 353
+DEBUG: Saved best model for fold 4 at epoch 354
+DEBUG: Saved best model for fold 4 at epoch 360
+DEBUG: Saved best model for fold 4 at epoch 361
+DEBUG: Saved best model for fold 4 at epoch 362
+DEBUG: Saved best model for fold 4 at epoch 363
+DEBUG: Saved best model for fold 4 at epoch 368
+DEBUG: Fold 4, Epoch 400/1000, Train Loss: 0.3674, Test Loss: 0.4380, Test ROC AUC: 0.9945
+DEBUG: Early stopping triggered for fold 4 at epoch 418
+DEBUG: Loading best model for fold 4
+DEBUG: Calculating metrics for fold 4
+DEBUG: Optimal threshold for fold 4: 0.5289281010627747
+DEBUG: Fold 4 metrics - Precision: 1.0000, Recall: 0.9231, FPR: 0.0000, F1: 0.9600, ROC AUC: 1.0000, PRC AUC: 1.0000, MCC: 0.9282
+DEBUG: Generating plots for fold 4
+DEBUG: Saved learning curve for fold 4
+DEBUG: Saved probability plots for fold 4
+DEBUG: Saved ROC curve for fold 4
+DEBUG: Saved PRC curve for fold 4
+DEBUG: Saved metrics for fold 4
+DEBUG: ========== Completed Fold 4/5 ==========
+DEBUG: ========== Starting Fold 5/5 ==========
+DEBUG: Fold output directory: 14102025_test/fold_5
+DEBUG: Splitting data for fold 5
+DEBUG: Fold 5 - train size: 111, test size: 27
+DEBUG: Initializing model for fold 5
+DEBUG: Initializing model with in_features=5, hidden_features=128
+DEBUG: Model layers initialized
+DEBUG: Model, optimizer, scheduler, and criterion initialized for fold 5
+DEBUG: Resampling minority class for fold 5
+DEBUG: Minority class count: 54
+DEBUG: Using SMOTE with k_neighbors=10
+DEBUG: Resampled to 114 samples
+DEBUG: Created datasets for fold 5: train=114, test=27
+DEBUG: Creating DataLoaders for fold 5
+DEBUG: DataLoaders created for fold 5
+DEBUG: Starting training loop for fold 5
+DEBUG: Saved best model for fold 5 at epoch 1
+DEBUG: Saved best model for fold 5 at epoch 2
+DEBUG: Saved best model for fold 5 at epoch 3
+DEBUG: Saved best model for fold 5 at epoch 4
+DEBUG: Saved best model for fold 5 at epoch 5
+DEBUG: Saved best model for fold 5 at epoch 6
+DEBUG: Saved best model for fold 5 at epoch 12
+DEBUG: Saved best model for fold 5 at epoch 13
+DEBUG: Saved best model for fold 5 at epoch 14
+DEBUG: Saved best model for fold 5 at epoch 15
+DEBUG: Fold 5, Epoch 50/1000, Train Loss: 0.6539, Test Loss: 0.8194, Test ROC AUC: 0.3407
+DEBUG: Early stopping triggered for fold 5 at epoch 65
+DEBUG: Loading best model for fold 5
+DEBUG: Calculating metrics for fold 5
+DEBUG: Optimal threshold for fold 5: 0.5622358918190002
+DEBUG: Fold 5 metrics - Precision: 0.0000, Recall: 0.0000, FPR: 0.0000, F1: 0.0000, ROC AUC: 0.2637, PRC AUC: 0.4372, MCC: 0.0000
+DEBUG: Generating plots for fold 5
+DEBUG: Saved learning curve for fold 5
+DEBUG: Saved probability plots for fold 5
+DEBUG: Saved ROC curve for fold 5
+DEBUG: Saved PRC curve for fold 5
+DEBUG: Saved metrics for fold 5
+DEBUG: ========== Completed Fold 5/5 ==========
+DEBUG: Aggregating metrics across all folds
+DEBUG: All fold metrics saved to 14102025_test/all_fold_metrics.csv
+DEBUG: Average ROC AUC across all folds: 0.7669
+DEBUG: Benchmarking pipeline completed successfully
+DEBUG: Successfully created results.json at 14102025_test/results.json
+DEBUG_METRIC: Confusion Matrix Values - TP: 0, FP: 0, FN: 13, TN: 14
+DEBUG_METRIC: F1 Discrepancy Analysis:
+  - Confusion Matrix (TN, FP, FN, TP): 14, 0, 13, 0
+  - pos_label=1: P=0.0000, R=0.0000, F1_check=0.0000, Manual_F1=nan
+  - pos_label=0: P=0.5185, R=1.0000, F1_check=0.6829, Manual_F1=0.6829
+  - Correct F1 (Matching P/R manual calc): 0.6829
+DEBUG: run_benchmarking_pipeline function finished.
+DEBUG: Progress updated: Benchmarking completed successfully.
+DEBUG: Main script execution finished.

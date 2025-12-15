@@ -1,0 +1,3 @@
+Executing command in P00720...
+FAIL: P00720 failed with exit status 2. Pruning this dataset from successful runs.
+Details in P00720_benchmarking_error.log

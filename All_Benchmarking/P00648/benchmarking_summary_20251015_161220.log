@@ -1,0 +1,3 @@
+Executing command in P00648...
+FAIL: P00648 failed with exit status 2. Pruning this dataset from successful runs.
+Details in P00648_benchmarking_error.log
