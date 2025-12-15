@@ -223,7 +223,12 @@ stablyzegraph-installer/
 └── python_scripts/
     ├── Mutation_list_to_sequence_conversion.py # Module for the conversion of a mutation list into protein mutant sequences
     ├── Data_augmentation.py             # Module for augmenting negative data class (if required)
-    ├── Similarity_check_BLOSUM.py       # Module to run BLOSUM similarity check for pairwise comparison
+    ├── Similarity_check_BLOSUM.py       # Module to run BLOSUM 
+└── All_Benchmarking/               # Benchmarking Results
+    ├── Data_N                     # All Datasets Directories
+└── All_Datasets/                   # Curated Datasets
+    ├── Data_N                     # All Datasets Directories
+similarity check for pairwise comparison
 ```
 
 ## License
