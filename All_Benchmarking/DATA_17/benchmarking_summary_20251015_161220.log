@@ -1,0 +1,3 @@
+Executing command in DATA_17...
+FAIL: DATA_17 failed with exit status 2. Pruning this dataset from successful runs.
+Details in DATA_17_benchmarking_error.log
