@@ -220,6 +220,8 @@ stablyzegraph-installer/
     ├── requirements.txt            # Python dependencies
     ├── logo.png                    # Application logo
     ├── icon.png                    # Application desktop icon
+└── StabLyzeGraph_Windows_x64_Installer/    # Installation folder for Windows
+    ├── StabLyzeGraph_Installer.exe         # Installer for Windows version
 └── python_scripts/
     ├── Mutation_list_to_sequence_conversion.py # Module for the conversion of a mutation list into protein mutant sequences
     ├── Data_augmentation.py             # Module for augmenting negative data class (if required)
