@@ -3,7 +3,7 @@
 <div align="center">
   <img src="src/logo.png" alt="StablyzeGraph Logo" width="300"/>
   
-  **StabLyzeGraph: Charting Stability-Enhancing Mutations using Graph Neural Networks**
+  **StabLyzeGraph: High-Throughput Screening of Combinatorial Mutations Using Graph Neural Networks**
   
   [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
   [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org)
