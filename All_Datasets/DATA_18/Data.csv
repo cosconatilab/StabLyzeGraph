@@ -1,0 +1,193 @@
+ID,Protein Name,Mutation,PDB,T,pH,Method,Measure,ΔΔG,ΔTm,Reference
+7819,Tyrosine-protein kinase Fyn,V138H,1SHF,298.15,7,GdnHCl,Fluorescence,0.02,'-,PMID: 16142914
+7820,Tyrosine-protein kinase Fyn,V138L,1SHF,298.15,7,GdnHCl,Fluorescence,0.04,'-,PMID: 16142914
+4087,Tyrosine-protein kinase Fyn,S41K,1SHF,298.15,8,GdnHCl,CD,0.11,'-,PMID: 9819209
+7822,Tyrosine-protein kinase Fyn,V138W,1SHF,298.15,7,GdnHCl,Fluorescence,0.13,'-,PMID: 16142914
+6083,Tyrosine-protein kinase Fyn,V55I,'-,353.25,8,Thermal,CD,0.17,0.9,PMID: 11786916
+6853,Tyrosine-protein kinase Fyn,V55I,1SHF,353.25,8,Thermal,CD,0.17,'-0.20,PMID: 14556750
+6854,Tyrosine-protein kinase Fyn,A39V,1SHF,353.25,8,Thermal,CD,0.18,'-0.60,PMID: 14556750
+6369,Tyrosine-protein kinase Fyn,E24D,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,0.45,'-,PMID: 12079394
+4086,Tyrosine-protein kinase Fyn,E24D,1SHF,298.15,8,GdnHCl,CD,0.68,'-,PMID: 9819209
+4118,Tyrosine-protein kinase Fyn,E24D,1SHF,353.15,8,Thermal,CD,'-,2.1,PMID: 9819209
+4119,Tyrosine-protein kinase Fyn,E24T,1SHF,353.15,8,Thermal,CD,'-,'-5.70,PMID: 9819209
+4120,Tyrosine-protein kinase Fyn,E24Q,1SHF,353.15,8,Thermal,CD,'-,'-6.00,PMID: 9819209
+4121,Tyrosine-protein kinase Fyn,E24H,1SHF,353.15,8,Thermal,CD,'-,'-6.50,PMID: 9819209
+4122,Tyrosine-protein kinase Fyn,E24K,1SHF,353.15,8,Thermal,CD,'-,'-6.60,PMID: 9819209
+4123,Tyrosine-protein kinase Fyn,E24A,1SHF,353.15,8,Thermal,CD,'-,'-7.60,PMID: 9819209
+4124,Tyrosine-protein kinase Fyn,E24S,1SHF,353.15,8,Thermal,CD,'-,'-12.30,PMID: 9819209
+4125,Tyrosine-protein kinase Fyn,E24F,1SHF,353.15,8,Thermal,CD,'-,'-13.50,PMID: 9819209
+4126,Tyrosine-protein kinase Fyn,E24V,1SHF,353.15,8,Thermal,CD,'-,'-14.30,PMID: 9819209
+4127,Tyrosine-protein kinase Fyn,E24P,1SHF,353.15,8,Thermal,CD,'-,'-15.90,PMID: 9819209
+4128,Tyrosine-protein kinase Fyn,E24Y,1SHF,353.15,8,Thermal,CD,'-,'-18.90,PMID: 9819209
+4129,Tyrosine-protein kinase Fyn,E24I,1SHF,353.15,8,Thermal,CD,'-,'-24.90,PMID: 9819209
+4130,Tyrosine-protein kinase Fyn,E24L,1SHF,353.15,8,Thermal,CD,'-,'-27.10,PMID: 9819209
+4131,Tyrosine-protein kinase Fyn,E24R,1SHF,353.15,8,Thermal,CD,'-,'-34.50,PMID: 9819209
+4132,Tyrosine-protein kinase Fyn,S41K,1SHF,353.15,8,Thermal,CD,'-,5.4,PMID: 9819209
+4133,Tyrosine-protein kinase Fyn,S41R,1SHF,353.15,8,Thermal,CD,'-,2.5,PMID: 9819209
+4134,Tyrosine-protein kinase Fyn,S41N,1SHF,353.15,8,Thermal,CD,'-,'-2.60,PMID: 9819209
+4135,Tyrosine-protein kinase Fyn,S41L,1SHF,353.15,8,Thermal,CD,'-,'-4.50,PMID: 9819209
+4136,Tyrosine-protein kinase Fyn,S41H,1SHF,353.15,8,Thermal,CD,'-,'-5.30,PMID: 9819209
+4137,Tyrosine-protein kinase Fyn,S41A,1SHF,353.15,8,Thermal,CD,'-,'-6.20,PMID: 9819209
+4138,Tyrosine-protein kinase Fyn,S41I,1SHF,353.15,8,Thermal,CD,'-,'-6.80,PMID: 9819209
+4139,Tyrosine-protein kinase Fyn,S41V,1SHF,353.15,8,Thermal,CD,'-,'-9.80,PMID: 9819209
+4140,Tyrosine-protein kinase Fyn,S41T,1SHF,353.15,8,Thermal,CD,'-,'-14.50,PMID: 9819209
+4141,Tyrosine-protein kinase Fyn,S41F,1SHF,353.15,8,Thermal,CD,'-,'-18.70,PMID: 9819209
+4142,Tyrosine-protein kinase Fyn,S41Y,1SHF,353.15,8,Thermal,CD,'-,'-18.70,PMID: 9819209
+4143,Tyrosine-protein kinase Fyn,S41D,1SHF,353.15,8,Thermal,CD,'-,'-20.70,PMID: 9819209
+4144,Tyrosine-protein kinase Fyn,S41G,1SHF,353.15,8,Thermal,CD,'-,'-21.50,PMID: 9819209
+6855,Tyrosine-protein kinase Fyn,V55S,1SHF,353.25,8,Thermal,CD,'-,1.5,PMID: 14556750
+8926,Tyrosine-protein kinase Fyn,N53A,1SHF,'-,8,Thermal,CD,'-,2.36,PMID: 18626019
+8927,Tyrosine-protein kinase Fyn,N53I,1SHF,'-,8,Thermal,CD,'-,'-1.16,PMID: 18626019
+8928,Tyrosine-protein kinase Fyn,N53F,1SHF,'-,8,Thermal,CD,'-,'-3.20,PMID: 18626019
+8929,Tyrosine-protein kinase Fyn,N53K,1SHF,'-,8,Thermal,CD,'-,'-0.20,PMID: 18626019
+8930,Tyrosine-protein kinase Fyn,N53D,1SHF,'-,8,Thermal,CD,'-,'-2.00,PMID: 18626019
+8931,Tyrosine-protein kinase Fyn,N53S,1SHF,'-,8,Thermal,CD,'-,'-0.10,PMID: 18626019
+8932,Tyrosine-protein kinase Fyn,N53L,1SHF,'-,8,Thermal,CD,'-,'-0.90,PMID: 18626019
+8933,Tyrosine-protein kinase Fyn,N53V,1SHF,'-,8,Thermal,CD,'-,'-5.90,PMID: 18626019
+8934,Tyrosine-protein kinase Fyn,N53P,1SHF,'-,8,Thermal,CD,'-,'-13.00,PMID: 18626019
+8935,Tyrosine-protein kinase Fyn,N53Y,1SHF,'-,8,Thermal,CD,'-,'-2.44,PMID: 18626019
+8936,Tyrosine-protein kinase Fyn,N53H,1SHF,'-,8,Thermal,CD,'-,'-2.70,PMID: 18626019
+8937,Tyrosine-protein kinase Fyn,N53E,1SHF,'-,8,Thermal,CD,'-,'-4.70,PMID: 18626019
+8938,Tyrosine-protein kinase Fyn,N53T,1SHF,'-,8,Thermal,CD,'-,0.63,PMID: 18626019
+8939,Tyrosine-protein kinase Fyn,N53R,1SHF,'-,8,Thermal,CD,'-,1.79,PMID: 18626019
+8940,Tyrosine-protein kinase Fyn,N53Q,1SHF,'-,8,Thermal,CD,'-,0.46,PMID: 18626019
+8941,Tyrosine-protein kinase Fyn,N53M,1SHF,'-,8,Thermal,CD,'-,0.27,PMID: 18626019
+8942,Tyrosine-protein kinase Fyn,N53W,1SHF,'-,8,Thermal,CD,'-,4.96,PMID: 18626019
+8943,Tyrosine-protein kinase Fyn,N53G,1SHF,'-,8,Thermal,CD,'-,'-0.64,PMID: 18626019
+8944,Tyrosine-protein kinase Fyn,L3A,1SHF,'-,8,Thermal,CD,'-,'-10.50,PMID: 18626019
+8945,Tyrosine-protein kinase Fyn,F4A,1SHF,'-,8,Thermal,CD,'-,'-2.69,PMID: 18626019
+8946,Tyrosine-protein kinase Fyn,R40I,1SHF,'-,8,Thermal,CD,'-,3.2,PMID: 18626019
+8947,Tyrosine-protein kinase Fyn,T47I,1SHF,'-,8,Thermal,CD,'-,1.9,PMID: 18626019
+6077,Tyrosine-protein kinase Fyn,I50V,'-,353.25,8,Thermal,CD,'-0.04,'-2.20,PMID: 11786916
+6852,Tyrosine-protein kinase Fyn,I50V,1SHF,353.25,8,Thermal,CD,'-0.04,'-2.20,PMID: 14556750
+7818,Tyrosine-protein kinase Fyn,V138F,1SHF,298.15,7,GdnHCl,Fluorescence,'-0.04,'-,PMID: 16142914
+6084,Tyrosine-protein kinase Fyn,V55L,'-,353.25,8,Thermal,CD,'-0.12,'-0.20,PMID: 11786916
+6851,Tyrosine-protein kinase Fyn,V55L,1SHF,353.25,8,Thermal,CD,'-0.12,0.9,PMID: 14556750
+6073,Tyrosine-protein kinase Fyn,I28V,'-,353.25,8,Thermal,CD,'-0.16,'-2.20,PMID: 11786916
+6850,Tyrosine-protein kinase Fyn,I28V,1SHF,353.25,8,Thermal,CD,'-0.16,'-2.20,PMID: 14556750
+6051,Tyrosine-protein kinase Fyn,A39V,'-,353.25,8,Thermal,CD,'-0.18,'-0.60,PMID: 11786916
+4088,Tyrosine-protein kinase Fyn,S41R,1SHF,298.15,8,GdnHCl,CD,'-0.18,'-,PMID: 9819209
+4089,Tyrosine-protein kinase Fyn,S41L,1SHF,298.15,8,GdnHCl,CD,'-0.37,'-,PMID: 9819209
+6849,Tyrosine-protein kinase Fyn,W37L,1SHF,353.25,8,Thermal,CD,'-0.40,'-3.20,PMID: 14556750
+6068,Tyrosine-protein kinase Fyn,F4V,'-,353.25,8,Thermal,CD,'-0.47,'-1.30,PMID: 11786916
+6848,Tyrosine-protein kinase Fyn,F4V,1SHF,353.25,8,Thermal,CD,'-0.47,'-1.30,PMID: 14556750
+7817,Tyrosine-protein kinase Fyn,V138M,1SHF,298.15,7,GdnHCl,Fluorescence,'-0.51,'-,PMID: 16142914
+6382,Tyrosine-protein kinase Fyn,S41K,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-0.52,'-,PMID: 12079394
+6847,Tyrosine-protein kinase Fyn,W37F,1SHF,353.25,8,Thermal,CD,'-0.55,'-4.40,PMID: 14556750
+6383,Tyrosine-protein kinase Fyn,S41R,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-0.56,'-,PMID: 12079394
+4091,Tyrosine-protein kinase Fyn,E24T,1SHF,298.15,8,GdnHCl,CD,'-0.60,'-,PMID: 9819209
+6384,Tyrosine-protein kinase Fyn,S41L,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-0.63,'-,PMID: 12079394
+6370,Tyrosine-protein kinase Fyn,E24Q,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-0.67,'-,PMID: 12079394
+6371,Tyrosine-protein kinase Fyn,E24T,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-0.68,'-,PMID: 12079394
+6385,Tyrosine-protein kinase Fyn,S41A,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-0.68,'-,PMID: 12079394
+6079,Tyrosine-protein kinase Fyn,L18I,'-,353.25,8,Thermal,CD,'-0.69,'-1.30,PMID: 11786916
+6846,Tyrosine-protein kinase Fyn,L18I,1SHF,353.25,8,Thermal,CD,'-0.69,'-1.30,PMID: 14556750
+4092,Tyrosine-protein kinase Fyn,S41A,1SHF,298.15,8,GdnHCl,CD,'-0.71,'-,PMID: 9819209
+6082,Tyrosine-protein kinase Fyn,V55F,'-,353.25,8,Thermal,CD,'-0.73,'-7.10,PMID: 11786916
+4093,Tyrosine-protein kinase Fyn,S41N,1SHF,298.15,8,GdnHCl,CD,'-0.73,'-,PMID: 9819209
+6845,Tyrosine-protein kinase Fyn,V55F,1SHF,353.25,8,Thermal,CD,'-0.73,'-7.10,PMID: 14556750
+4094,Tyrosine-protein kinase Fyn,E24Q,1SHF,298.15,8,GdnHCl,CD,'-0.74,'-,PMID: 9819209
+6076,Tyrosine-protein kinase Fyn,I50L,'-,353.25,8,Thermal,CD,'-0.75,'-4.90,PMID: 11786916
+6844,Tyrosine-protein kinase Fyn,I50L,1SHF,353.25,8,Thermal,CD,'-0.75,'-4.90,PMID: 14556750
+6063,Tyrosine-protein kinase Fyn,F26L,'-,353.25,8,Thermal,CD,'-0.76,'-2.60,PMID: 11786916
+6843,Tyrosine-protein kinase Fyn,F26L,1SHF,353.25,8,Thermal,CD,'-0.76,'-2.60,PMID: 14556750
+6386,Tyrosine-protein kinase Fyn,S41H,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-0.77,'-,PMID: 12079394
+6387,Tyrosine-protein kinase Fyn,S41V,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-0.83,'-,PMID: 12079394
+6372,Tyrosine-protein kinase Fyn,E24H,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-0.96,'-,PMID: 12079394
+4095,Tyrosine-protein kinase Fyn,E24K,1SHF,298.15,8,GdnHCl,CD,'-0.97,'-,PMID: 9819209
+4096,Tyrosine-protein kinase Fyn,E24H,1SHF,298.15,8,GdnHCl,CD,'-0.99,'-,PMID: 9819209
+6842,Tyrosine-protein kinase Fyn,W37V,1SHF,353.25,8,Thermal,CD,'-0.99,'-8.30,PMID: 14556750
+6071,Tyrosine-protein kinase Fyn,I28L,'-,353.25,8,Thermal,CD,'-1.01,'-7.20,PMID: 11786916
+6841,Tyrosine-protein kinase Fyn,I28L,1SHF,353.25,8,Thermal,CD,'-1.01,'-7.20,PMID: 14556750
+6373,Tyrosine-protein kinase Fyn,E24K,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-1.03,'-,PMID: 12079394
+6374,Tyrosine-protein kinase Fyn,E24A,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-1.08,'-,PMID: 12079394
+4097,Tyrosine-protein kinase Fyn,S41V,1SHF,298.15,8,GdnHCl,CD,'-1.10,'-,PMID: 9819209
+6388,Tyrosine-protein kinase Fyn,S41I,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-1.10,'-,PMID: 12079394
+6059,Tyrosine-protein kinase Fyn,F20L,'-,353.25,8,Thermal,CD,'-1.11,'-10.90,PMID: 11786916
+6840,Tyrosine-protein kinase Fyn,F20L,1SHF,353.25,8,Thermal,CD,'-1.11,'-10.90,PMID: 14556750
+6078,Tyrosine-protein kinase Fyn,L18F,'-,353.25,8,Thermal,CD,'-1.20,'-5.50,PMID: 11786916
+6839,Tyrosine-protein kinase Fyn,L18F,1SHF,353.25,8,Thermal,CD,'-1.20,'-5.50,PMID: 14556750
+4099,Tyrosine-protein kinase Fyn,S41H,1SHF,298.15,8,GdnHCl,CD,'-1.25,'-,PMID: 9819209
+6056,Tyrosine-protein kinase Fyn,A6S,'-,353.25,8,Thermal,CD,'-1.26,'-12.60,PMID: 11786916
+6838,Tyrosine-protein kinase Fyn,A6S,1SHF,353.25,8,Thermal,CD,'-1.26,'-12.60,PMID: 14556750
+4100,Tyrosine-protein kinase Fyn,E24A,1SHF,298.15,8,GdnHCl,CD,'-1.27,'-,PMID: 9819209
+6375,Tyrosine-protein kinase Fyn,E24S,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-1.27,'-,PMID: 12079394
+6065,Tyrosine-protein kinase Fyn,F4A,'-,353.25,8,Thermal,CD,'-1.34,'-8.90,PMID: 11786916
+6837,Tyrosine-protein kinase Fyn,F4A,1SHF,353.25,8,Thermal,CD,'-1.34,'-8.90,PMID: 14556750
+6045,Tyrosine-protein kinase Fyn,A39G,'-,353.25,8,Thermal,CD,'-1.35,'-12.00,PMID: 11786916
+6836,Tyrosine-protein kinase Fyn,A39G,1SHF,353.25,8,Thermal,CD,'-1.35,'-12.00,PMID: 14556750
+4102,Tyrosine-protein kinase Fyn,S41I,1SHF,298.15,8,GdnHCl,CD,'-1.41,'-,PMID: 9819209
+6389,Tyrosine-protein kinase Fyn,S41N,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-1.42,'-,PMID: 12079394
+6055,Tyrosine-protein kinase Fyn,A6G,'-,353.25,8,Thermal,CD,'-1.56,'-18.60,PMID: 11786916
+6835,Tyrosine-protein kinase Fyn,A6G,1SHF,353.25,8,Thermal,CD,'-1.56,'-18.60,PMID: 14556750
+6080,Tyrosine-protein kinase Fyn,L18V,'-,353.25,8,Thermal,CD,'-1.63,'-10.70,PMID: 11786916
+4104,Tyrosine-protein kinase Fyn,E24F,1SHF,298.15,8,GdnHCl,CD,'-1.63,'-,PMID: 9819209
+6376,Tyrosine-protein kinase Fyn,E24V,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-1.63,'-,PMID: 12079394
+6834,Tyrosine-protein kinase Fyn,L18V,1SHF,353.25,8,Thermal,CD,'-1.63,'-10.70,PMID: 14556750
+4105,Tyrosine-protein kinase Fyn,E24S,1SHF,298.15,8,GdnHCl,CD,'-1.64,'-,PMID: 9819209
+4106,Tyrosine-protein kinase Fyn,S41T,1SHF,298.15,8,GdnHCl,CD,'-1.65,'-,PMID: 9819209
+6401,Tyrosine-protein kinase Fyn,G45A,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-1.67,'-,PMID: 12079394
+4107,Tyrosine-protein kinase Fyn,S41G,1SHF,298.15,8,GdnHCl,CD,'-1.68,'-,PMID: 9819209
+4108,Tyrosine-protein kinase Fyn,E24P,1SHF,298.15,8,GdnHCl,CD,'-1.71,'-,PMID: 9819209
+6390,Tyrosine-protein kinase Fyn,S41T,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-1.86,'-,PMID: 12079394
+6061,Tyrosine-protein kinase Fyn,F20V,'-,353.25,8,Thermal,CD,'-1.88,'-8.40,PMID: 11786916
+6833,Tyrosine-protein kinase Fyn,F20V,1SHF,353.25,8,Thermal,CD,'-1.88,'-8.40,PMID: 14556750
+6377,Tyrosine-protein kinase Fyn,E24P,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-1.89,'-,PMID: 12079394
+4109,Tyrosine-protein kinase Fyn,S41F,1SHF,298.15,8,GdnHCl,CD,'-1.90,'-,PMID: 9819209
+6067,Tyrosine-protein kinase Fyn,F4S,'-,353.25,8,Thermal,CD,'-1.96,'-27.20,PMID: 11786916
+6832,Tyrosine-protein kinase Fyn,F4S,1SHF,353.25,8,Thermal,CD,'-1.96,'-27.20,PMID: 14556750
+6062,Tyrosine-protein kinase Fyn,F26I,'-,353.25,8,Thermal,CD,'-1.99,'-11.60,PMID: 11786916
+6066,Tyrosine-protein kinase Fyn,F4L,'-,353.25,8,Thermal,CD,'-1.99,'-14.60,PMID: 11786916
+6830,Tyrosine-protein kinase Fyn,F4L,1SHF,353.25,8,Thermal,CD,'-1.99,'-14.60,PMID: 14556750
+6831,Tyrosine-protein kinase Fyn,F26I,1SHF,353.25,8,Thermal,CD,'-1.99,'-11.60,PMID: 14556750
+4110,Tyrosine-protein kinase Fyn,E24V,1SHF,298.15,8,GdnHCl,CD,'-2.00,'-,PMID: 9819209
+6378,Tyrosine-protein kinase Fyn,E24G,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-2.00,'-,PMID: 12079394
+6391,Tyrosine-protein kinase Fyn,S41D,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-2.00,'-,PMID: 12079394
+4111,Tyrosine-protein kinase Fyn,S41D,1SHF,298.15,8,GdnHCl,CD,'-2.02,'-,PMID: 9819209
+7816,Tyrosine-protein kinase Fyn,V138A,1SHF,298.15,7,GdnHCl,Fluorescence,'-2.07,'-,PMID: 16142914
+6392,Tyrosine-protein kinase Fyn,S41G,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-2.09,'-,PMID: 12079394
+6064,Tyrosine-protein kinase Fyn,F26V,'-,353.25,8,Thermal,CD,'-2.11,'-16.70,PMID: 11786916
+6829,Tyrosine-protein kinase Fyn,F26V,1SHF,353.25,8,Thermal,CD,'-2.11,'-16.70,PMID: 14556750
+6081,Tyrosine-protein kinase Fyn,V55A,'-,353.25,8,Thermal,CD,'-2.13,'-17.10,PMID: 11786916
+6828,Tyrosine-protein kinase Fyn,V55A,1SHF,353.25,8,Thermal,CD,'-2.13,'-17.10,PMID: 14556750
+6393,Tyrosine-protein kinase Fyn,S41F,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-2.18,'-,PMID: 12079394
+6044,Tyrosine-protein kinase Fyn,A39F,'-,353.25,8,Thermal,CD,'-2.20,'-21.90,PMID: 11786916
+6827,Tyrosine-protein kinase Fyn,A39F,1SHF,353.25,8,Thermal,CD,'-2.20,'-21.90,PMID: 14556750
+4112,Tyrosine-protein kinase Fyn,S41Y,1SHF,298.15,8,GdnHCl,CD,'-2.27,'-,PMID: 9819209
+6394,Tyrosine-protein kinase Fyn,S41Y,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-2.29,'-,PMID: 12079394
+7815,Tyrosine-protein kinase Fyn,V138T,1SHF,298.15,7,GdnHCl,Fluorescence,'-2.32,'-,PMID: 16142914
+6826,Tyrosine-protein kinase Fyn,W37A,1SHF,353.25,8,Thermal,CD,'-2.35,'-21.60,PMID: 14556750
+6049,Tyrosine-protein kinase Fyn,A39L,'-,353.25,8,Thermal,CD,'-2.39,'-31.70,PMID: 11786916
+6825,Tyrosine-protein kinase Fyn,A39L,1SHF,353.25,8,Thermal,CD,'-2.39,'-31.70,PMID: 14556750
+4113,Tyrosine-protein kinase Fyn,E24Y,1SHF,298.15,8,GdnHCl,CD,'-2.40,'-,PMID: 9819209
+6058,Tyrosine-protein kinase Fyn,F20A,'-,353.25,8,Thermal,CD,'-2.41,'-22.30,PMID: 11786916
+6824,Tyrosine-protein kinase Fyn,F20A,1SHF,353.25,8,Thermal,CD,'-2.41,'-22.30,PMID: 14556750
+6050,Tyrosine-protein kinase Fyn,A39S,'-,353.25,8,Thermal,CD,'-2.54,'-26.90,PMID: 11786916
+6823,Tyrosine-protein kinase Fyn,A39S,1SHF,353.25,8,Thermal,CD,'-2.54,'-26.90,PMID: 14556750
+6379,Tyrosine-protein kinase Fyn,E24R,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-2.56,'-,PMID: 12079394
+6069,Tyrosine-protein kinase Fyn,I28A,'-,353.25,8,Thermal,CD,'-2.64,'-27.10,PMID: 11786916
+6822,Tyrosine-protein kinase Fyn,I28A,1SHF,353.25,8,Thermal,CD,'-2.64,'-27.10,PMID: 14556750
+6821,Tyrosine-protein kinase Fyn,W37S,1SHF,353.25,8,Thermal,CD,'-2.70,'-25.60,PMID: 14556750
+6070,Tyrosine-protein kinase Fyn,I28F,'-,353.25,8,Thermal,CD,'-2.71,'-22.60,PMID: 11786916
+4114,Tyrosine-protein kinase Fyn,E24I,1SHF,298.15,8,GdnHCl,CD,'-2.71,'-,PMID: 9819209
+6820,Tyrosine-protein kinase Fyn,I28F,1SHF,353.25,8,Thermal,CD,'-2.71,'-22.60,PMID: 14556750
+6400,Tyrosine-protein kinase Fyn,T44A,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-2.72,'-,PMID: 12079394
+6380,Tyrosine-protein kinase Fyn,E24I,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-2.84,'-,PMID: 12079394
+6381,Tyrosine-protein kinase Fyn,E24L,1SHF,298.15,8,GdnHCl,Stopped-flow fluorescence,'-2.98,'-,PMID: 12079394
+6819,Tyrosine-protein kinase Fyn,A6L,1SHF,353.25,8,Thermal,CD,'-3.00,'-29.30,PMID: 14556750
+4116,Tyrosine-protein kinase Fyn,E24L,1SHF,298.15,8,GdnHCl,CD,'-3.02,'-,PMID: 9819209
+6060,Tyrosine-protein kinase Fyn,F20S,'-,353.25,8,Thermal,CD,'-3.03,'-40.90,PMID: 11786916
+6818,Tyrosine-protein kinase Fyn,F20S,1SHF,353.25,8,Thermal,CD,'-3.03,'-40.90,PMID: 14556750
+6072,Tyrosine-protein kinase Fyn,I28S,'-,353.25,8,Thermal,CD,'-3.04,'-33.50,PMID: 11786916
+6817,Tyrosine-protein kinase Fyn,I28S,1SHF,353.25,8,Thermal,CD,'-3.04,'-33.50,PMID: 14556750
+6074,Tyrosine-protein kinase Fyn,I50A,'-,353.25,8,Thermal,CD,'-3.12,'-35.90,PMID: 11786916
+6816,Tyrosine-protein kinase Fyn,I50A,1SHF,353.25,8,Thermal,CD,'-3.12,'-35.90,PMID: 14556750
+4117,Tyrosine-protein kinase Fyn,E24R,1SHF,298.15,8,GdnHCl,CD,'-3.38,'-,PMID: 9819209
+6075,Tyrosine-protein kinase Fyn,I50F,'-,353.25,8,Thermal,CD,'-3.47,'-34.80,PMID: 11786916
+6815,Tyrosine-protein kinase Fyn,I50F,1SHF,353.25,8,Thermal,CD,'-3.47,'-34.80,PMID: 14556750
+6814,Tyrosine-protein kinase Fyn,A6F,1SHF,353.25,8,Thermal,CD,'-3.76,'-40.70,PMID: 14556750
+7814,Tyrosine-protein kinase Fyn,V138G,1SHF,298.15,7,GdnHCl,Fluorescence,'-3.77,'-,PMID: 16142914
+6813,Tyrosine-protein kinase Fyn,A6V,1SHF,353.25,8,Thermal,CD,'-3.80,'-41.50,PMID: 14556750
+6812,Tyrosine-protein kinase Fyn,L18S,1SHF,353.25,8,Thermal,CD,'-3.88,'-43.00,PMID: 14556750
+6811,Tyrosine-protein kinase Fyn,L18A,1SHF,353.25,8,Thermal,CD,'-3.92,'-43.80,PMID: 14556750
+7821,Tyrosine-protein kinase Fyn,V138S,1SHF,298.15,7,GdnHCl,Fluorescence,'-4.17,'-,PMID: 16142914
