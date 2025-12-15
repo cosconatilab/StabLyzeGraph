@@ -23,7 +23,7 @@
 - **Interactive GUI**: Modern PyQt6-based interface with real-time progress tracking
 - **PyTorch Integration**: Leverages PyTorch and PyTorch Geometric for deep learning
 - **Comprehensive Analysis**: Detailed metrics, plots, and result visualization
-- **Cross-Platform**: Works on Linux systems with full desktop integration
+- **Cross-Platform**: Works on Linux systems with full desktop integration and Windows 64 bit
 
 ##  Quick Install
 
@@ -33,15 +33,10 @@
 - Internet connection for downloading dependencies
 - At least 5GB of free disk space
 
-### One-Command Installation
+### One-Command Installation for Linux
 
 ```bash
-# Download and extract the package
-wget https://github.com/cosconatilab/StabLyzeGraph/archive/refs/heads/main.zip
-unzip main.zip
-cd main/StabLyzeGraph-main/
-
-# Run the installer
+# Download and extract the package, then run the installer
 python install_stablyzegraph_gui.py
 ```
 
@@ -110,7 +105,7 @@ Or use the desktop shortcut/application menu entry.
    - PDB Structure
    - Properties (CSV)
 
-2. **Configure Parameters:**
+2. **Configure Parameters (Example):**
    - Hidden Dimension: 128 (default)
    - Dropout Rate: 0.25 (default)
    - Learning Rate: 0.00001 (default)
@@ -139,7 +134,7 @@ Or use the desktop shortcut/application menu entry.
 ## System Requirements
 
 ### Minimum Requirements
-- **OS**: Linux (Ubuntu 18.04+, CentOS 7+, Fedora 30+)
+- **OS**: Linux (Ubuntu 18.04+, CentOS 7+, Fedora 30+) or Windows 64 bit
 - **RAM**: 4GB (16GB recommended)
 - **Storage**: 5GB free space
 
