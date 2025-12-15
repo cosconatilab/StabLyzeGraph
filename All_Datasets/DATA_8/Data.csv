@@ -1,0 +1,198 @@
+ID,Protein Name,Mutation,PDB,T,pH,Method,Measure,ΔΔG,ΔTm,Reference
+2554,Myoglobin,L69M,1BVC,349.65,11,Thermal,DSC,0,0,PMID: 8251481
+3894,Myoglobin,D122A,1BVC,277.35,4,Urea,"CD, Fluorescence",0,'-,PMID: 9601047
+3954,Myoglobin,L69M,1BVC,349.65,11,Urea,"CD, Fluorescence",0,'-,PMID: 9601047
+3968,Myoglobin,V13A,1BVC,277.15,4.2,Urea,"CD, Fluorescence",0,'-,PMID: 9601047
+4331,Myoglobin,V13A,1BVC,298.15,5,Urea,CD,0,'-,PMID: 10051585
+6869,Myoglobin,L32A,1BVC,298.15,4.1,Urea,CD,0.01,'-,PMID: 14607120
+2451,Myoglobin,H93G,1BVC,273.15,7,Urea,CD,0.02,'-,PMID: 8158639
+4523,Myoglobin,K77A,1BVC,298.15,4,Urea,Fluorescence,0.02,'-,PMID: 10423259
+2555,Myoglobin,I28V,1BVC,349.65,11,Thermal,DSC,0.04,0.1,PMID: 8251481
+3924,Myoglobin,I28V,1BVC,349.65,11,Urea,"CD, Fluorescence",0.04,'-,PMID: 9601047
+3920,Myoglobin,I28A,1BVC,298.15,4.1,Urea,"CD, Fluorescence",0.08,'-,PMID: 9601047
+6868,Myoglobin,L29A,1BVC,298.15,4.1,Urea,CD,0.09,'-,PMID: 14607120
+3893,Myoglobin,A15L,1BVC,277.15,4.2,Urea,"CD, Fluorescence",0.1,'-,PMID: 9601047
+3909,Myoglobin,H36Q,1BVC,277.35,4,Urea,"CD, Fluorescence",0.1,'-,PMID: 9601047
+4329,Myoglobin,A144L,1BVC,277.15,4.2,Urea,CD,0.1,'-,PMID: 10051585
+4330,Myoglobin,A15L,1BVC,298.15,5,Urea,CD,0.1,'-,PMID: 10051585
+2556,Myoglobin,L29M,1BVC,349.65,11,Thermal,DSC,0.12,'-0.30,PMID: 8251481
+3947,Myoglobin,L29M,1BVC,349.65,11,Urea,"CD, Fluorescence",0.12,'-,PMID: 9601047
+4522,Myoglobin,D60A,1BVC,298.15,4,Urea,Fluorescence,0.15,'-,PMID: 10423259
+2665,Myoglobin,H116A,1BVC,355.35,9.6,Thermal,CD,0.16,0.3,PMID: 8358293
+4328,Myoglobin,A15L,1BVC,277.15,4.2,Urea,CD,0.2,'-,PMID: 10051585
+4521,Myoglobin,D44A,1BVC,298.15,4,Urea,Fluorescence,0.2,'-,PMID: 10423259
+3925,Myoglobin,I30A,1BVC,298.15,4.1,Urea,"CD, Fluorescence",0.21,'-,PMID: 9601047
+4520,Myoglobin,K56A,1BVC,298.15,4,Urea,CD,0.25,'-,PMID: 10423259
+3964,Myoglobin,S117A,1BVC,355.35,9.6,Urea,"CD, Fluorescence",0.26,'-,PMID: 9601047
+3966,Myoglobin,T67A,1BVC,355.35,9.6,Urea,"CD, Fluorescence",0.26,'-,PMID: 9601047
+5613,Myoglobin,E109A,1BVC,277.15,4.2,Urea,Fluorescence,0.27,'-,PMID: 11318652
+3898,Myoglobin,E109A,1BVC,277.15,4.2,Urea,"CD, Fluorescence",0.36,'-,PMID: 9601047
+6867,Myoglobin,L29A,1BVC,298.15,6,Urea,CD,0.39,'-,PMID: 14607120
+1244,Myoglobin,C110D,1BVC,298.15,7.6,GdnHCl,CD,0.4,'-,PMID: 2765493
+3892,Myoglobin,A144L,1BVC,277.15,4.2,Urea,"CD, Fluorescence",0.4,'-,PMID: 9601047
+4326,Myoglobin,A125L,1BVC,277.15,4.2,Urea,CD,0.4,'-,PMID: 10051585
+4327,Myoglobin,A144L,1BVC,298.15,5,Urea,CD,0.4,'-,PMID: 10051585
+3956,Myoglobin,L9A,1BVC,355.35,9.6,Urea,"CD, Fluorescence",0.41,'-,PMID: 9601047
+3935,Myoglobin,L11A,1BVC,355.35,9.6,Urea,"CD, Fluorescence",0.44,'-,PMID: 9601047
+5612,Myoglobin,K140A,1BVC,277.15,4.2,Urea,Fluorescence,0.47,'-,PMID: 11318652
+1243,Myoglobin,C110S,1BVC,298.15,7.6,GdnHCl,CD,0.5,'-,PMID: 2765493
+2666,Myoglobin,P88A,1BVC,355.35,9.6,Thermal,CD,0.59,1.1,PMID: 8358293
+3887,Myoglobin,A125L,1BVC,277.15,4.2,Urea,"CD, Fluorescence",0.6,'-,PMID: 9601047
+3928,Myoglobin,K140A,1BVC,277.15,4.2,Urea,"CD, Fluorescence",0.6,'-,PMID: 9601047
+4325,Myoglobin,A125L,1BVC,298.15,5,Urea,CD,0.6,'-,PMID: 10051585
+2557,Myoglobin,I142L,1BVC,349.65,11,Thermal,DSC,0.63,1.8,PMID: 8251481
+3916,Myoglobin,I142L,1BVC,349.65,11,Urea,"CD, Fluorescence",0.63,'-,PMID: 9601047
+3969,Myoglobin,V13A,1BVC,355.35,9.6,Urea,"CD, Fluorescence",0.67,'-,PMID: 9601047
+4518,Myoglobin,E18A,1BVC,298.15,4,Urea,CD,0.7,'-,PMID: 10423259
+4519,Myoglobin,E4A,1BVC,298.15,4,Urea,CD,0.7,'-,PMID: 10423259
+2667,Myoglobin,V66A,1BVC,355.35,9.6,Thermal,CD,0.75,1.4,PMID: 8358293
+2558,Myoglobin,I142M,1BVC,349.65,11,Thermal,DSC,0.93,2.6,PMID: 8251481
+3917,Myoglobin,I142M,1BVC,349.65,11,Urea,"CD, Fluorescence",0.93,'-,PMID: 9601047
+5610,Myoglobin,Q8A,1BVC,277.15,4.2,Urea,Fluorescence,0.98,'-,PMID: 11318652
+1242,Myoglobin,C110A,1BVC,276.15,7.6,Urea,CD,1,'-,PMID: 2765493
+2668,Myoglobin,G129A,1BVC,355.35,9.6,Thermal,CD,1.05,2,PMID: 8358293
+3959,Myoglobin,Q8A,1BVC,277.15,4.2,Urea,"CD, Fluorescence",1.07,'-,PMID: 9601047
+3907,Myoglobin,G23A,1BVC,355.35,9.6,Urea,"CD, Fluorescence",1.12,'-,PMID: 9601047
+3965,Myoglobin,T51A,1BVC,355.35,9.6,Urea,"CD, Fluorescence",1.41,'-,PMID: 9601047
+3967,Myoglobin,V114A,1BVC,355.35,9.6,Urea,"CD, Fluorescence",1.45,'-,PMID: 9601047
+3942,Myoglobin,L149A,1BVC,355.35,9.6,Urea,"CD, Fluorescence",1.6,'-,PMID: 9601047
+2903,Myoglobin,L29A,1BVC,296.15,5,Urea,Abs,1.65,'-,PMID: 8448200
+3941,Myoglobin,L137A,1BVC,355.35,9.6,Urea,"CD, Fluorescence",1.78,'-,PMID: 9601047
+6866,Myoglobin,I30A,1BVC,298.15,6,Urea,CD,1.9,'-,PMID: 14607120
+3915,Myoglobin,I142A,1BVC,355.35,9.6,Urea,"CD, Fluorescence",1.92,'-,PMID: 9601047
+6865,Myoglobin,L32A,1BVC,298.15,6,Urea,CD,2.04,'-,PMID: 14607120
+6864,Myoglobin,I28A,1BVC,298.15,6,Urea,CD,2.06,'-,PMID: 14607120
+1241,Myoglobin,C110A,1BVC,298.15,7.6,GdnHCl,CD,2.8,'-,PMID: 2765493
+3949,Myoglobin,L32A,1BVC,298.15,4.1,Urea,"CD, Fluorescence",'-0.01,'-,PMID: 9601047
+2553,Myoglobin,L69I,1BVC,349.65,11,Thermal,DSC,'-0.02,'-0.10,PMID: 8251481
+3953,Myoglobin,L69I,1BVC,349.65,11,Urea,"CD, Fluorescence",'-0.02,'-,PMID: 9601047
+2452,Myoglobin,H82Q,1BVC,273.15,7,Urea,CD,'-0.03,'-,PMID: 8158639
+3932,Myoglobin,K77A,1BVC,298.15,4,Urea,"CD, Fluorescence",'-0.05,'-,PMID: 9601047
+2453,Myoglobin,H97Q,1BVC,273.15,7,Urea,CD,'-0.06,'-,PMID: 8158639
+3895,Myoglobin,D20A,1BVC,277.35,4,Urea,"CD, Fluorescence",'-0.06,'-,PMID: 9601047
+6870,Myoglobin,I28A,1BVC,298.15,4.1,Urea,CD,'-0.08,'-,PMID: 14607120
+3944,Myoglobin,L29A,1BVC,298.15,4.1,Urea,"CD, Fluorescence",'-0.09,'-,PMID: 9601047
+2552,Myoglobin,L69V,1BVC,349.65,11,Thermal,DSC,'-0.10,'-0.30,PMID: 8251481
+3897,Myoglobin,D60A,1BVC,298.15,4,Urea,"CD, Fluorescence",'-0.10,'-,PMID: 9601047
+3955,Myoglobin,L69V,1BVC,349.65,11,Urea,"CD, Fluorescence",'-0.10,'-,PMID: 9601047
+4332,Myoglobin,V13A,1BVC,277.15,4.2,Urea,CD,'-0.10,'-,PMID: 10051585
+4333,Myoglobin,L137A,1BVC,277.15,4.2,Urea,CD,'-0.10,'-,PMID: 10051585
+2551,Myoglobin,I142V,1BVC,349.65,11,Thermal,DSC,'-0.12,'-0.30,PMID: 8251481
+3918,Myoglobin,I142V,1BVC,349.65,11,Urea,"CD, Fluorescence",'-0.12,'-,PMID: 9601047
+2454,Myoglobin,H113Q,1BVC,273.15,7,Urea,CD,'-0.13,'-,PMID: 8158639
+3896,Myoglobin,D44A,1BVC,298.15,4,Urea,"CD, Fluorescence",'-0.15,'-,PMID: 9601047
+3908,Myoglobin,H116A,1BVC,355.35,9.6,Urea,"CD, Fluorescence",'-0.16,'-,PMID: 9601047
+1245,Myoglobin,C110S,1BVC,276.15,7.6,Urea,CD,'-0.20,'-,PMID: 2765493
+4334,Myoglobin,F106A,1BVC,277.15,4.2,Urea,CD,'-0.20,'-,PMID: 10051585
+6871,Myoglobin,I30A,1BVC,298.15,4.1,Urea,CD,'-0.21,'-,PMID: 14607120
+2455,Myoglobin,H64Q,1BVC,273.15,7,Urea,CD,'-0.23,'-,PMID: 8158639
+3961,Myoglobin,R118A,1BVC,277.35,4,Urea,"CD, Fluorescence",'-0.23,'-,PMID: 9601047
+3931,Myoglobin,K56A,1BVC,298.15,4,Urea,"CD, Fluorescence",'-0.25,'-,PMID: 9601047
+2456,Myoglobin,H24V,1BVC,273.15,7,Urea,CD,'-0.26,'-,PMID: 8158639
+2663,Myoglobin,T67A,1BVC,355.35,9.6,Thermal,CD,'-0.26,'-0.50,PMID: 8358293
+2664,Myoglobin,S117A,1BVC,355.35,9.6,Thermal,CD,'-0.26,'-0.50,PMID: 8358293
+3929,Myoglobin,K140A,1BVC,277.35,4,Urea,"CD, Fluorescence",'-0.30,'-,PMID: 9601047
+3940,Myoglobin,L137A,1BVC,277.15,4.2,Urea,"CD, Fluorescence",'-0.30,'-,PMID: 9601047
+4335,Myoglobin,F123A,1BVC,277.15,4.2,Urea,CD,'-0.30,'-,PMID: 10051585
+4336,Myoglobin,L137A,1BVC,298.15,5,Urea,CD,'-0.30,'-,PMID: 10051585
+2457,Myoglobin,H48Q,1BVC,273.15,7,Urea,CD,'-0.31,'-,PMID: 8158639
+2458,Myoglobin,H119F,1BVC,273.15,7,Urea,CD,'-0.34,'-,PMID: 8158639
+3945,Myoglobin,L29A,1BVC,298.15,6,Urea,"CD, Fluorescence",'-0.39,'-,PMID: 9601047
+3963,Myoglobin,R31A,1BVC,277.35,4,Urea,"CD, Fluorescence",'-0.39,'-,PMID: 9601047
+2662,Myoglobin,L9A,1BVC,355.35,9.6,Thermal,CD,'-0.41,'-0.80,PMID: 8358293
+3930,Myoglobin,K147A,1BVC,277.35,4,Urea,"CD, Fluorescence",'-0.43,'-,PMID: 9601047
+2661,Myoglobin,L11A,1BVC,355.35,9.6,Thermal,CD,'-0.44,'-0.80,PMID: 8358293
+3927,Myoglobin,K133A,1BVC,277.35,4,Urea,"CD, Fluorescence",'-0.49,'-,PMID: 9601047
+4337,Myoglobin,L11A,1BVC,277.15,4.2,Urea,CD,'-0.50,'-,PMID: 10051585
+2550,Myoglobin,I28L,1BVC,349.65,11,Thermal,DSC,'-0.55,'-1.70,PMID: 8251481
+3922,Myoglobin,I28L,1BVC,349.65,11,Urea,"CD, Fluorescence",'-0.55,'-,PMID: 9601047
+2549,Myoglobin,I28M,1BVC,349.65,11,Thermal,DSC,'-0.56,'-1.70,PMID: 8251481
+3923,Myoglobin,I28M,1BVC,349.65,11,Urea,"CD, Fluorescence",'-0.56,'-,PMID: 9601047
+5615,Myoglobin,Q8G,1BVC,277.15,4.2,Urea,Fluorescence,'-0.56,'-,PMID: 11318652
+3958,Myoglobin,P88A,1BVC,355.35,9.6,Urea,"CD, Fluorescence",'-0.59,'-,PMID: 9601047
+2904,Myoglobin,L104A,1BVC,296.15,5,Urea,Abs,'-0.60,'-,PMID: 8448200
+3075,Myoglobin,V68T,1BVC,277.15,7.8,Urea,CD,'-0.60,'-,PMID: 8612074
+3934,Myoglobin,L11A,1BVC,277.15,4.2,Urea,"CD, Fluorescence",'-0.60,'-,PMID: 9601047
+3971,Myoglobin,V68T,1BVC,277.15,7.8,Urea,"CD, Fluorescence",'-0.60,'-,PMID: 9601047
+4338,Myoglobin,L11A,1BVC,298.15,5,Urea,CD,'-0.60,'-,PMID: 10051585
+3960,Myoglobin,Q8G,1BVC,277.15,4.2,Urea,"CD, Fluorescence",'-0.63,'-,PMID: 9601047
+2548,Myoglobin,I111L,1BVC,349.65,11,Thermal,DSC,'-0.64,'-2.00,PMID: 8251481
+3912,Myoglobin,I111L,1BVC,349.65,11,Urea,"CD, Fluorescence",'-0.64,'-,PMID: 9601047
+2459,Myoglobin,H36Q,1BVC,273.15,7,Urea,CD,'-0.65,'-,PMID: 8158639
+2660,Myoglobin,V13A,1BVC,355.35,9.6,Thermal,CD,'-0.67,'-1.30,PMID: 8358293
+3900,Myoglobin,E18A,1BVC,298.15,4,Urea,"CD, Fluorescence",'-0.70,'-,PMID: 9601047
+3901,Myoglobin,E4A,1BVC,298.15,4,Urea,"CD, Fluorescence",'-0.70,'-,PMID: 9601047
+3902,Myoglobin,F106A,1BVC,277.15,4.2,Urea,"CD, Fluorescence",'-0.70,'-,PMID: 9601047
+4339,Myoglobin,F106A,1BVC,298.15,5,Urea,CD,'-0.70,'-,PMID: 10051585
+2905,Myoglobin,L72A,1BVC,296.15,5,Urea,Abs,'-0.74,'-,PMID: 8448200
+3962,Myoglobin,R139A,1BVC,277.35,4,Urea,"CD, Fluorescence",'-0.75,'-,PMID: 9601047
+3970,Myoglobin,V66A,1BVC,355.35,9.6,Urea,"CD, Fluorescence",'-0.75,'-,PMID: 9601047
+2906,Myoglobin,L29A,1BVC,296.15,4,Urea,Abs,'-0.79,'-,PMID: 8448200
+2547,Myoglobin,L135M,1BVC,349.65,11,Thermal,DSC,'-0.79,'-2.50,PMID: 8251481
+3938,Myoglobin,L135M,1BVC,349.65,11,Urea,"CD, Fluorescence",'-0.79,'-,PMID: 9601047
+2546,Myoglobin,L49I,1BVC,349.65,11,Thermal,DSC,'-0.80,'-2.50,PMID: 8251481
+3074,Myoglobin,H36Q,1BVC,277.15,7.8,Urea,CD,'-0.80,'-,PMID: 8612074
+3910,Myoglobin,H36Q,1BVC,277.15,7.8,Urea,"CD, Fluorescence",'-0.80,'-,PMID: 9601047
+3951,Myoglobin,L49I,1BVC,349.65,11,Urea,"CD, Fluorescence",'-0.80,'-,PMID: 9601047
+4340,Myoglobin,L135A,1BVC,277.15,4.2,Urea,CD,'-0.80,'-,PMID: 10051585
+3068,Myoglobin,W7F,1BVC,277.15,7.8,Urea,CD,'-0.90,'-,PMID: 8612074
+3073,Myoglobin,A130L,1BVC,277.15,7.8,Urea,CD,'-0.90,'-,PMID: 8612074
+3891,Myoglobin,A130L,1BVC,277.15,7.8,Urea,"CD, Fluorescence",'-0.90,'-,PMID: 9601047
+3973,Myoglobin,W7F,1BVC,277.15,7.8,Urea,"CD, Fluorescence",'-0.90,'-,PMID: 9601047
+5616,Myoglobin,E109G,1BVC,277.15,4.2,Urea,Fluorescence,'-0.93,'-,PMID: 11318652
+3899,Myoglobin,E109G,1BVC,277.15,4.2,Urea,"CD, Fluorescence",'-0.96,'-,PMID: 9601047
+4341,Myoglobin,L115A,1BVC,277.15,4.2,Urea,CD,'-1.00,'-,PMID: 10051585
+3906,Myoglobin,G129A,1BVC,355.35,9.6,Urea,"CD, Fluorescence",'-1.05,'-,PMID: 9601047
+2545,Myoglobin,I142A,1BVC,349.65,11,Thermal,DSC,'-1.10,'-3.50,PMID: 8251481
+3069,Myoglobin,W14F,1BVC,277.15,7.8,Urea,CD,'-1.10,'-,PMID: 8612074
+3903,Myoglobin,F123A,1BVC,277.15,4.2,Urea,"CD, Fluorescence",'-1.10,'-,PMID: 9601047
+3914,Myoglobin,I142A,1BVC,349.65,11,Urea,"CD, Fluorescence",'-1.10,'-,PMID: 9601047
+3972,Myoglobin,W14F,1BVC,277.15,7.8,Urea,"CD, Fluorescence",'-1.10,'-,PMID: 9601047
+4342,Myoglobin,F123A,1BVC,298.15,5,Urea,CD,'-1.10,'-,PMID: 10051585
+2907,Myoglobin,L104A,1BVC,296.15,4,Urea,Abs,'-1.12,'-,PMID: 8448200
+2544,Myoglobin,L29I,1BVC,349.65,11,Thermal,DSC,'-1.12,'-3.60,PMID: 8251481
+2659,Myoglobin,G23A,1BVC,355.35,9.6,Thermal,CD,'-1.12,'-2.20,PMID: 8358293
+3946,Myoglobin,L29I,1BVC,349.65,11,Urea,"CD, Fluorescence",'-1.12,'-,PMID: 9601047
+2543,Myoglobin,I111M,1BVC,349.65,11,Thermal,DSC,'-1.14,'-3.70,PMID: 8251481
+3913,Myoglobin,I111M,1BVC,349.65,11,Urea,"CD, Fluorescence",'-1.14,'-,PMID: 9601047
+2542,Myoglobin,L69A,1BVC,349.65,11,Thermal,DSC,'-1.18,'-3.80,PMID: 8251481
+3952,Myoglobin,L69A,1BVC,349.65,11,Urea,"CD, Fluorescence",'-1.18,'-,PMID: 9601047
+2908,Myoglobin,L72A,1BVC,296.15,4,Urea,Abs,'-1.33,'-,PMID: 8448200
+2541,Myoglobin,I28A,1BVC,349.65,11,Thermal,DSC,'-1.33,'-4.40,PMID: 8251481
+3919,Myoglobin,I28A,1BVC,349.65,11,Urea,"CD, Fluorescence",'-1.33,'-,PMID: 9601047
+3933,Myoglobin,L115A,1BVC,277.15,4.2,Urea,"CD, Fluorescence",'-1.40,'-,PMID: 9601047
+4343,Myoglobin,L115A,1BVC,298.15,5,Urea,CD,'-1.40,'-,PMID: 10051585
+2658,Myoglobin,T51A,1BVC,355.35,9.6,Thermal,CD,'-1.41,'-2.80,PMID: 8358293
+2657,Myoglobin,V114A,1BVC,355.35,9.6,Thermal,CD,'-1.45,'-2.90,PMID: 8358293
+2540,Myoglobin,L135I,1BVC,349.65,11,Thermal,DSC,'-1.54,'-5.20,PMID: 8251481
+3937,Myoglobin,L135I,1BVC,349.65,11,Urea,"CD, Fluorescence",'-1.54,'-,PMID: 9601047
+2656,Myoglobin,L149A,1BVC,355.35,9.6,Thermal,CD,'-1.60,'-3.20,PMID: 8358293
+3936,Myoglobin,L135A,1BVC,277.15,4.2,Urea,"CD, Fluorescence",'-1.70,'-,PMID: 9601047
+4344,Myoglobin,L135A,1BVC,298.15,5,Urea,CD,'-1.70,'-,PMID: 10051585
+2539,Myoglobin,L29V,1BVC,349.65,11,Thermal,DSC,'-1.72,'-6.00,PMID: 8251481
+3948,Myoglobin,L29V,1BVC,349.65,11,Urea,"CD, Fluorescence",'-1.72,'-,PMID: 9601047
+2655,Myoglobin,L137A,1BVC,355.35,9.6,Thermal,CD,'-1.78,'-3.60,PMID: 8358293
+1246,Myoglobin,C110L,1BVC,298.15,7.6,GdnHCl,CD,'-1.80,'-,PMID: 2765493
+2538,Myoglobin,I111A,1BVC,349.65,11,Thermal,DSC,'-1.84,'-6.40,PMID: 8251481
+3911,Myoglobin,I111A,1BVC,349.65,11,Urea,"CD, Fluorescence",'-1.84,'-,PMID: 9601047
+3926,Myoglobin,I30A,1BVC,298.15,6,Urea,"CD, Fluorescence",'-1.90,'-,PMID: 9601047
+2654,Myoglobin,I142A,1BVC,355.35,9.6,Thermal,CD,'-1.92,'-3.90,PMID: 8358293
+3950,Myoglobin,L32A,1BVC,298.15,6,Urea,"CD, Fluorescence",'-2.04,'-,PMID: 9601047
+3921,Myoglobin,I28A,1BVC,298.15,6,Urea,"CD, Fluorescence",'-2.06,'-,PMID: 9601047
+3071,Myoglobin,F123K,1BVC,277.15,7.8,Urea,CD,'-2.10,'-,PMID: 8612074
+3072,Myoglobin,A130K,1BVC,277.15,7.8,Urea,CD,'-2.10,'-,PMID: 8612074
+3889,Myoglobin,A130K,1BVC,277.15,7.8,Urea,"CD, Fluorescence",'-2.10,'-,PMID: 9601047
+3904,Myoglobin,F123K,1BVC,277.15,7.8,Urea,"CD, Fluorescence",'-2.10,'-,PMID: 9601047
+3070,Myoglobin,M131A,1BVC,277.15,7.8,Urea,CD,'-2.20,'-,PMID: 8612074
+3957,Myoglobin,M131A,1BVC,277.15,7.8,Urea,"CD, Fluorescence",'-2.20,'-,PMID: 9601047
+2537,Myoglobin,L135V,1BVC,349.65,11,Thermal,DSC,'-2.25,'-8.30,PMID: 8251481
+3939,Myoglobin,L135V,1BVC,349.65,11,Urea,"CD, Fluorescence",'-2.25,'-,PMID: 9601047
+974,Myoglobin,A130L,1BVC,273.15,7.5,Urea,CD,'-2.30,'-,PMID: 2021603
+3890,Myoglobin,A130L,1BVC,273.15,7.5,Urea,"CD, Fluorescence",'-2.30,'-,PMID: 9601047
+2536,Myoglobin,L29A,1BVC,349.65,11,Thermal,DSC,'-2.37,'-8.90,PMID: 8251481
+3943,Myoglobin,L29A,1BVC,349.65,11,Urea,"CD, Fluorescence",'-2.37,'-,PMID: 9601047
+976,Myoglobin,F123T,1BVC,273.15,7.5,Urea,CD,'-3.50,'-,PMID: 2021603
+3905,Myoglobin,F123T,1BVC,273.15,7.5,Urea,"CD, Fluorescence",'-3.50,'-,PMID: 9601047
+1247,Myoglobin,C110D,1BVC,276.15,7.6,Urea,CD,'-3.60,'-,PMID: 2765493
+975,Myoglobin,A130K,1BVC,273.15,7.5,Urea,CD,'-3.70,'-,PMID: 2021603
+3888,Myoglobin,A130K,1BVC,273.15,7.5,Urea,"CD, Fluorescence",'-3.70,'-,PMID: 9601047

@@ -1,0 +1,119 @@
+ID,Protein Name,Mutation,PDB,T,pH,Method,Measure,ΔΔG,ΔTm,Reference
+1630,Pancreatic trypsin inhibitor,T11A,1BPI,312.15,7,Thermal,DSC,0,'-0.20,PMID: 7540212
+1640,Pancreatic trypsin inhibitor,K26A,1BPI,312.15,7,Thermal,DSC,0,'-0.10,PMID: 7540212
+1642,Pancreatic trypsin inhibitor,L29A,1BPI,312.15,7,Thermal,DSC,0,0.3,PMID: 7540212
+1649,Pancreatic trypsin inhibitor,R39A,1BPI,312.15,7,Thermal,DSC,0,0,PMID: 7540212
+3321,Pancreatic trypsin inhibitor,V34A,1BPI,295.15,8,Thermal,CD,0,'-,PMID: 8784199
+1653,Pancreatic trypsin inhibitor,K46A,1BPI,312.15,7,Thermal,DSC,0.1,0.6,PMID: 7540212
+3319,Pancreatic trypsin inhibitor,I19A,1BPI,295.15,8,Thermal,CD,0.1,'-,PMID: 8784199
+3320,Pancreatic trypsin inhibitor,K46A,1BPI,295.15,8,Thermal,CD,0.1,'-,PMID: 8784199
+1623,Pancreatic trypsin inhibitor,D3A,1BPI,312.15,7,Thermal,DSC,0.2,1.4,PMID: 7540212
+3317,Pancreatic trypsin inhibitor,T11A,1BPI,295.15,8,Thermal,CD,0.2,'-,PMID: 8784199
+3318,Pancreatic trypsin inhibitor,R39A,1BPI,295.15,8,Thermal,CD,0.2,'-,PMID: 8784199
+3316,Pancreatic trypsin inhibitor,R20A,1BPI,295.15,8,Thermal,CD,0.3,'-,PMID: 8784199
+3315,Pancreatic trypsin inhibitor,R17A,1BPI,295.15,8,Thermal,CD,0.5,'-,PMID: 8784199
+3314,Pancreatic trypsin inhibitor,G12A,1BPI,295.15,8,Thermal,CD,0.6,'-,PMID: 8784199
+5320,Pancreatic trypsin inhibitor,A16L,1BPI,298.15,3,Thermal,CD,0.6,'-,PMID: 10926503
+3312,Pancreatic trypsin inhibitor,Y35A,1BPI,295.15,8,Thermal,CD,0.8,'-,PMID: 8784199
+3313,Pancreatic trypsin inhibitor,G37A,1BPI,295.15,8,Thermal,CD,0.8,'-,PMID: 8784199
+3311,Pancreatic trypsin inhibitor,G36A,1BPI,295.15,8,Thermal,CD,0.9,'-,PMID: 8784199
+3310,Pancreatic trypsin inhibitor,K15A,1BPI,295.15,8,Thermal,CD,2,'-,PMID: 8784199
+1897,Pancreatic trypsin inhibitor,Y23A,1BPI,303.15,3.5,Thermal,DSC,7,'-,PMID: 7686069
+3323,Pancreatic trypsin inhibitor,I18A,1BPI,367.35,3,Thermal,CD,'-,0.2,PMID: 8784199
+3324,Pancreatic trypsin inhibitor,F33A,1BPI,367.35,3,Thermal,CD,'-,'-16.50,PMID: 8784199
+3325,Pancreatic trypsin inhibitor,G12A,1BPI,367.35,3,Thermal,CD,'-,'-16.10,PMID: 8784199
+3326,Pancreatic trypsin inhibitor,Y35A,1BPI,367.35,3,Thermal,CD,'-,'-16.20,PMID: 8784199
+3327,Pancreatic trypsin inhibitor,G37A,1BPI,367.35,3,Thermal,CD,'-,'-4.20,PMID: 8784199
+3328,Pancreatic trypsin inhibitor,G36A,1BPI,367.35,3,Thermal,CD,'-,'-11.70,PMID: 8784199
+3329,Pancreatic trypsin inhibitor,K15A,1BPI,367.35,3,Thermal,CD,'-,'-4.20,PMID: 8784199
+3330,Pancreatic trypsin inhibitor,R17A,1BPI,367.35,3,Thermal,CD,'-,'-4.70,PMID: 8784199
+3331,Pancreatic trypsin inhibitor,I19A,1BPI,367.35,3,Thermal,CD,'-,'-4.80,PMID: 8784199
+3332,Pancreatic trypsin inhibitor,T11A,1BPI,367.35,3,Thermal,CD,'-,'-0.30,PMID: 8784199
+3333,Pancreatic trypsin inhibitor,R39A,1BPI,367.35,3,Thermal,CD,'-,0,PMID: 8784199
+1644,Pancreatic trypsin inhibitor,T32A,1BPI,312.15,7,Thermal,DSC,'-0.10,'-0.40,PMID: 7540212
+1658,Pancreatic trypsin inhibitor,R53A,1BPI,312.15,7,Thermal,DSC,'-0.10,'-0.90,PMID: 7540212
+1659,Pancreatic trypsin inhibitor,T54A,1BPI,312.15,7,Thermal,DSC,'-0.10,'-0.70,PMID: 7540212
+3322,Pancreatic trypsin inhibitor,P13A,1BPI,295.15,8,Thermal,CD,'-0.10,'-,PMID: 8784199
+5321,Pancreatic trypsin inhibitor,A16R,1BPI,298.15,3,Thermal,CD,'-0.17,'-,PMID: 10926503
+1655,Pancreatic trypsin inhibitor,E49A,1BPI,312.15,7,Thermal,DSC,'-0.20,'-1.30,PMID: 7540212
+1660,Pancreatic trypsin inhibitor,G56A,1BPI,312.15,7,Thermal,DSC,'-0.20,'-1.40,PMID: 7540212
+1661,Pancreatic trypsin inhibitor,G57A,1BPI,312.15,7,Thermal,DSC,'-0.20,'-1.50,PMID: 7540212
+5322,Pancreatic trypsin inhibitor,A16S,1BPI,298.15,3,Thermal,CD,'-0.21,'-,PMID: 10926503
+5319,Pancreatic trypsin inhibitor,A16G,1BPI,298.15,3,Thermal,CD,'-0.26,'-,PMID: 10926503
+1627,Pancreatic trypsin inhibitor,P8A,1BPI,312.15,7,Thermal,DSC,'-0.30,'-2.50,PMID: 7540212
+1634,Pancreatic trypsin inhibitor,R17A,1BPI,312.15,7,Thermal,DSC,'-0.30,'-1.90,PMID: 7540212
+1633,Pancreatic trypsin inhibitor,K15A,1BPI,312.15,7,Thermal,DSC,'-0.40,'-2.60,PMID: 7540212
+1650,Pancreatic trypsin inhibitor,K41A,1BPI,312.15,7,Thermal,DSC,'-0.40,'-3.00,PMID: 7540212
+1656,Pancreatic trypsin inhibitor,D50A,1BPI,312.15,7,Thermal,DSC,'-0.40,'-2.60,PMID: 7540212
+1621,Pancreatic trypsin inhibitor,R1A,1BPI,312.15,7,Thermal,DSC,'-0.50,'-3.90,PMID: 7540212
+1651,Pancreatic trypsin inhibitor,R42A,1BPI,312.15,7,Thermal,DSC,'-0.50,'-3.60,PMID: 7540212
+1625,Pancreatic trypsin inhibitor,L6A,1BPI,312.15,7,Thermal,DSC,'-0.60,'-4.60,PMID: 7540212
+1889,Pancreatic trypsin inhibitor,Y35F,1BPI,298.15,8.7,"GSSG, GSH",HPLC,'-0.60,'-,PMID: 7681323
+5324,Pancreatic trypsin inhibitor,A16W,1BPI,298.15,3,Thermal,CD,'-0.64,'-,PMID: 10926503
+1896,Pancreatic trypsin inhibitor,G36S,1BPI,345.75,4.6,Thermal,CD,'-0.70,'-4.50,PMID: 7683491
+1628,Pancreatic trypsin inhibitor,P9A,1BPI,312.15,7,Thermal,DSC,'-0.80,'-5.50,PMID: 7540212
+1641,Pancreatic trypsin inhibitor,G28A,1BPI,312.15,7,Thermal,DSC,'-1.00,'-7.30,PMID: 7540212
+1643,Pancreatic trypsin inhibitor,Q31A,1BPI,312.15,7,Thermal,DSC,'-1.00,'-7.50,PMID: 7540212
+6156,Pancreatic trypsin inhibitor,F22A,1BPI,293.15,2,GdnHCl,CD,'-1.00,'-,PMID: 11841216
+1646,Pancreatic trypsin inhibitor,Y35A,1BPI,312.15,7,Thermal,DSC,'-1.10,'-8.30,PMID: 7540212
+1629,Pancreatic trypsin inhibitor,Y10A,1BPI,312.15,7,Thermal,DSC,'-1.20,'-9.00,PMID: 7540212
+1632,Pancreatic trypsin inhibitor,P13A,1BPI,312.15,7,Thermal,DSC,'-1.20,'-9.00,PMID: 7540212
+1645,Pancreatic trypsin inhibitor,V34A,1BPI,312.15,7,Thermal,DSC,'-1.20,'-9.00,PMID: 7540212
+1898,Pancreatic trypsin inhibitor,F22A,1BPI,298.15,2,Thermal,DSC,'-1.20,'-9.00,PMID: 7686069
+1622,Pancreatic trypsin inhibitor,P2A,1BPI,312.15,7,Thermal,DSC,'-1.30,'-9.80,PMID: 7540212
+1884,Pancreatic trypsin inhibitor,A16V,1BPI,298.15,8.7,"GSSG, GSH",HPLC,'-1.30,'-,PMID: 7681323
+1886,Pancreatic trypsin inhibitor,F33L,1BPI,298.15,8.7,"GSSG, GSH",HPLC,'-1.30,'-,PMID: 7681323
+1882,Pancreatic trypsin inhibitor,P13S,1BPI,298.15,8.7,"GSSG, GSH",HPLC,'-1.40,'-,PMID: 7681323
+1626,Pancreatic trypsin inhibitor,E7A,1BPI,312.15,7,Thermal,DSC,'-1.50,'-11.20,PMID: 7540212
+1635,Pancreatic trypsin inhibitor,I18A,1BPI,312.15,7,Thermal,DSC,'-1.50,'-10.90,PMID: 7540212
+1654,Pancreatic trypsin inhibitor,S47A,1BPI,312.15,7,Thermal,DSC,'-1.60,'-11.90,PMID: 7540212
+1881,Pancreatic trypsin inhibitor,P13A,1BPI,298.15,8.7,"GSSG, GSH",HPLC,'-1.60,'-,PMID: 7681323
+1657,Pancreatic trypsin inhibitor,M52A,1BPI,312.15,7,Thermal,DSC,'-1.70,'-12.10,PMID: 7540212
+1883,Pancreatic trypsin inhibitor,A16T,1BPI,298.15,8.7,"GSSG, GSH",HPLC,'-1.70,'-,PMID: 7681323
+1895,Pancreatic trypsin inhibitor,G37D,1BPI,298.15,8.7,"GSSG, GSH",HPLC,'-1.70,'-,PMID: 7681323
+1631,Pancreatic trypsin inhibitor,G12A,1BPI,312.15,7,Thermal,DSC,'-1.80,'-13.10,PMID: 7540212
+1637,Pancreatic trypsin inhibitor,R20A,1BPI,312.15,7,Thermal,DSC,'-1.80,'-13.20,PMID: 7540212
+1904,Pancreatic trypsin inhibitor,E49M,1BPI,298.15,4.3,Thermal,DSC,'-11.40,'-56.40,PMID: 11910035
+721,Pancreatic trypsin inhibitor,R53M,1BPI,298.15,4.3,Thermal,DSC,'-12.40,'-68.00,PMID: 11910035
+719,Pancreatic trypsin inhibitor,K46M,1BPI,298.15,4.3,Thermal,DSC,'-12.70,'-60.30,PMID: 11910035
+1638,Pancreatic trypsin inhibitor,F22A,1BPI,312.15,7,Thermal,DSC,'-2.00,'-14.70,PMID: 7540212
+1636,Pancreatic trypsin inhibitor,I19A,1BPI,312.15,7,Thermal,DSC,'-2.10,'-15.10,PMID: 7540212
+1647,Pancreatic trypsin inhibitor,G36A,1BPI,312.15,7,Thermal,DSC,'-2.10,'-15.40,PMID: 7540212
+1903,Pancreatic trypsin inhibitor,F22A,1BPI,303.15,3.5,Thermal,DSC,'-2.10,'-,PMID: 7686069
+1639,Pancreatic trypsin inhibitor,N24A,1BPI,312.15,7,Thermal,DSC,'-2.20,'-15.80,PMID: 7540212
+1894,Pancreatic trypsin inhibitor,G37A,1BPI,298.15,8.7,"GSSG, GSH",HPLC,'-2.20,'-,PMID: 7681323
+1648,Pancreatic trypsin inhibitor,G37A,1BPI,312.15,7,Thermal,DSC,'-2.30,'-17.20,PMID: 7540212
+1885,Pancreatic trypsin inhibitor,F33I,1BPI,298.15,8.7,"GSSG, GSH",HPLC,'-2.40,'-,PMID: 7681323
+6158,Pancreatic trypsin inhibitor,G37A,1BPI,293.15,2,GdnHCl,CD,'-2.70,'-,PMID: 11841216
+1893,Pancreatic trypsin inhibitor,G36D,1BPI,298.15,8.7,"GSSG, GSH",HPLC,'-2.80,'-,PMID: 7681323
+1624,Pancreatic trypsin inhibitor,F4A,1BPI,312.15,7,Thermal,DSC,'-3.00,'-21.00,PMID: 7540212
+1652,Pancreatic trypsin inhibitor,N44A,1BPI,312.15,7,Thermal,DSC,'-3.30,'-29.00,PMID: 7540212
+1891,Pancreatic trypsin inhibitor,Y35L,1BPI,298.15,8.7,"GSSG, GSH",HPLC,'-3.70,'-,PMID: 7681323
+1892,Pancreatic trypsin inhibitor,Y35N,1BPI,298.15,8.7,"GSSG, GSH",HPLC,'-3.70,'-,PMID: 7681323
+1888,Pancreatic trypsin inhibitor,Y35D,1BPI,298.15,8.7,"GSSG, GSH",HPLC,'-3.80,'-,PMID: 7681323
+6155,Pancreatic trypsin inhibitor,Y21A,1BPI,293.15,2,GdnHCl,CD,'-3.90,'-,PMID: 11841216
+1880,Pancreatic trypsin inhibitor,G12V,1BPI,298.15,8.7,"GSSG, GSH",HPLC,'-4.10,'-,PMID: 7681323
+1879,Pancreatic trypsin inhibitor,G12D,1BPI,298.15,8.7,"GSSG, GSH",HPLC,'-4.30,'-,PMID: 7681323
+5323,Pancreatic trypsin inhibitor,A16V,1BPI,298.15,3,Thermal,CD,'-4.30,'-,PMID: 10926503
+1887,Pancreatic trypsin inhibitor,Y35A,1BPI,298.15,8.7,"GSSG, GSH",HPLC,'-4.70,'-,PMID: 7681323
+1910,Pancreatic trypsin inhibitor,N44G,1BPI,298.15,2,Thermal,DSC,'-4.70,'-21.00,PMID: 7690587
+1908,Pancreatic trypsin inhibitor,G37A,1BPI,298.15,2,Thermal,DSC,'-4.90,'-21.00,PMID: 7690587
+1890,Pancreatic trypsin inhibitor,Y35G,1BPI,298.15,8.7,"GSSG, GSH",HPLC,'-5.00,'-,PMID: 7681323
+1900,Pancreatic trypsin inhibitor,Y35G,1BPI,298.15,2,Thermal,DSC,'-5.00,'-18.00,PMID: 7686069
+1907,Pancreatic trypsin inhibitor,Y35G,1BPI,298.15,2,Thermal,DSC,'-5.00,'-18.00,PMID: 7690587
+1901,Pancreatic trypsin inhibitor,N43G,1BPI,298.15,2,Thermal,DSC,'-5.70,'-32.00,PMID: 7686069
+9846,Pancreatic trypsin inhibitor,Y35G,1BPI,303.15,3.5,Thermal,DSC,'-5.70,'-,PMID: 7686069
+9847,Pancreatic trypsin inhibitor,N43G,1BPI,298.15,2,Thermal,DSC,'-5.70,'-32.00,PMID: 7690587
+9850,Pancreatic trypsin inhibitor,R39M,1BPI,298.15,4.3,Thermal,DSC,'-5.70,'-17.00,PMID: 11910035
+1899,Pancreatic trypsin inhibitor,Y23A,1BPI,298.15,2,Thermal,DSC,'-5.90,'-33.00,PMID: 7686069
+6157,Pancreatic trypsin inhibitor,Y23A,1BPI,293.15,2,GdnHCl,CD,'-6.00,'-,PMID: 11841216
+9835,Pancreatic trypsin inhibitor,N43G,1BPI,303.15,3.5,Thermal,DSC,'-6.00,'-,PMID: 7686069
+9830,Pancreatic trypsin inhibitor,T32M,1BPI,298.15,4.3,Thermal,DSC,'-6.30,'-24.40,PMID: 11910035
+6159,Pancreatic trypsin inhibitor,F45A,1BPI,293.15,2,GdnHCl,CD,'-6.80,'-,PMID: 11841216
+1902,Pancreatic trypsin inhibitor,F45A,1BPI,298.15,2,Thermal,DSC,'-6.90,'-38.00,PMID: 7686069
+9223,Pancreatic trypsin inhibitor,F45A,1BPI,303.15,3.5,Thermal,DSC,'-7.20,'-,PMID: 7686069
+9224,Pancreatic trypsin inhibitor,F22M,1BPI,298.15,4.3,Thermal,DSC,'-7.20,'-29.30,PMID: 11910035
+6190,Pancreatic trypsin inhibitor,T54M,1BPI,298.15,4.3,Thermal,DSC,'-8.10,'-36.70,PMID: 11910035
+4667,Pancreatic trypsin inhibitor,L29M,1BPI,298.15,4.3,Thermal,DSC,'-8.50,'-39.40,PMID: 11910035
+3672,Pancreatic trypsin inhibitor,T11M,1BPI,298.15,4.3,Thermal,DSC,'-8.70,'-10.80,PMID: 11910035
+3665,Pancreatic trypsin inhibitor,L6M,1BPI,298.15,4.3,Thermal,DSC,'-8.80,'-37.60,PMID: 11910035
