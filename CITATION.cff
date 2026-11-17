@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use StabLyzeGraph, please cite the paper below."
+title: "StabLyzeGraph"
+type: software
+license: AGPL-3.0
+repository-code: "https://github.com/cosconatilab/StabLyzeGraph"
+authors:
+  - family-names: Waqas
+    given-names: Muhammad
+  - family-names: Natale
+    given-names: Benito
+  - family-names: Roggia
+    given-names: Michele
+  - family-names: Saha
+    given-names: Prasenjit Prasad
+  - family-names: Mileni
+    given-names: Mauro
+  - family-names: Cosconati
+    given-names: Sandro
+preferred-citation:
+  type: article
+  title: "StabLyzeGraph: High-throughput screening of combinatorial mutations using graph neural networks"
+  journal: "Protein Science"
+  year: 2026
+  volume: 35
+  issue: 4
+  start: e70534
+  doi: "10.1002/pro.70534"
+  authors:
+    - family-names: Waqas
+      given-names: Muhammad
+    - family-names: Natale
+      given-names: Benito
+    - family-names: Roggia
+      given-names: Michele
+    - family-names: Saha
+      given-names: Prasenjit Prasad
+    - family-names: Mileni
+      given-names: Mauro
+    - family-names: Cosconati
+      given-names: Sandro
