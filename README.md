@@ -228,6 +228,14 @@ stablyzegraph-installer/
 
 ```
 
+## Authors and citation
+
+StabLyzeGraph was developed by Muhammad Waqas and Benito Natale in the Cosconati lab (University of Campania Luigi Vanvitelli), together with Michele Roggia, Prasenjit Prasad Saha, Mauro Mileni and Sandro Cosconati.
+
+If you use StabLyzeGraph, please cite:
+
+Waqas M, Natale B, Roggia M, Saha PP, Mileni M, Cosconati S. StabLyzeGraph: High-throughput screening of combinatorial mutations using graph neural networks. *Protein Science* 2026, 35(4), e70534. [https://doi.org/10.1002/pro.70534](https://doi.org/10.1002/pro.70534)
+
 ## License
 
 This project is licensed under the GNU Affero General Public License v3.0 License - see the [LICENSE](LICENSE) file for details.
